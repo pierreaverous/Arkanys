@@ -1,0 +1,129 @@
+.NavBar {
+  display: flex;
+  align-items: baseline;
+  background-image: linear-gradient(to right, #073242 70%, #02e3dc 100%);
+  //box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  align-items: center;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.container-logo-title{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.logoImages{
+  width: 80%;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 50%;
+  animation: heartbeat 2s infinite; // Ajoutez cette ligne pour appliquer l'animation
+
+}
+.buttonLink{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.HeaderLink {
+  color: white;
+  margin-right: 40px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+.HeaderLink:hover {
+  font-size: 18px;
+  color: #f79007;
+  text-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+}
+
+.HeaderLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -39px;
+  height: 3px;
+  width: 100%;
+  background-color: #f79007;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+}
+
+.HeaderLink:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container-logo-title {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+  }
+
+  .HeaderLink {
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .NavBar {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttonLink{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .HeaderLink {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+}

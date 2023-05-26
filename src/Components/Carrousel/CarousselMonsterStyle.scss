@@ -1,0 +1,121 @@
+.carouselContainer {
+  max-width: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%);
+  height: 1000px;
+  overflow-x: hidden; // Cacher la barre de défilement horizontale
+
+}
+
+.carrouselTitle {
+  display: flex;
+  justify-content: center;
+  color: #f79007;
+  padding-top: 50px;
+}
+
+.swiper-container {
+  height: 80%;
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+    position: relative;
+  }
+
+  .swiper-slide {
+    width: 300px;
+    height: 510px;
+    margin-right: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #f79007;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+
+    &:not(.swiper-slide-active) {
+      opacity: 0.8;
+    }
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backface-visibility: hidden;
+    position: relative;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f79007;
+  }
+
+  .card-text {
+    font-size: 16px;
+    color: white;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #02e3dc;
+    color: #f79007;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &::before {
+      font-size: 24px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 80px;
+    transform: translateY(7300%);
+
+  }
+
+  .swiper-button-next {
+    right: 80px;
+    transform: translateY(7300%);
+
+  }
+}
+.custom-swiper-wrapper {
+  margin-right: 0;
+}

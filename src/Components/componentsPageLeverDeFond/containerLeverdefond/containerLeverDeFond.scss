@@ -1,0 +1,117 @@
+.containerLeverdeFond{
+  width: 90%;
+  height: auto;
+  border: 2px solid #02e3dc; /* Adjust the border thickness as needed */
+  background-color: #021619;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.leverdefondh1 {
+  color: white;
+  margin-top: 65px;
+}
+
+.leverdefondh2{
+  color: white;
+  font-size: 16px;
+
+}
+.leverdefondh3 {
+   color: white;
+}
+.decompte{
+  color: white;
+  font-size: 24px;
+}
+.titleLeverdefond{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.progress-container {
+  width: 90%;
+  height: 15px;
+  margin-left: 5%;
+  background-color:#f79007;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #073242;
+  transition: width 0.4s ease-in-out;
+  border-radius: 5px;
+}
+.buttonLeverFond{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contactButtonLeverFond {
+  background-color: #f79007;
+  width: 80%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  animation: heartbeat 2s infinite;
+
+
+  &:hover {
+    background-color:  #02e3dc;
+    color: white;
+    text-shadow: none;
+    text-shadow: 0 0 5px #02e3dc, 0 0 10px #02e3dc, 0 0 15px #02e3dc, 0 0 20px #02e3dc;
+    box-shadow: 0 0 5px #02e3dc, 0 0 10px #02e3dc, 0 0 15px #02e3dc, 0 0 20px #02e3dc;
+  }
+}
+.footerText{
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+

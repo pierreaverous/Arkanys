@@ -1,0 +1,165 @@
+.titleRoadmap {
+  display: flex;
+  justify-content: center;
+  color: #f79007;
+  padding-top: 50px;
+}
+//.containerRoadmap {
+//  width: 100%;
+//  background-image: linear-gradient(to bottom, #073242, #02e3dc);
+//  background-size: 100% 200%; /* This makes our gradient twice the height of the container, so we can animate it */
+//  animation: gradient-animation 5s ease-in-out infinite;
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//}
+.containerRoadmap {
+  width: 100%;
+  background: linear-gradient(270deg, #073242, #02e3dc);
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: url('../../ASSETS/Images/Logo/logo arcanys.png'), auto;
+}
+
+
+.timeline-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.roadmap-item {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0px 500px 0px;
+  border-radius: 10px;
+  background-color: #02e3dc;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+
+
+  &.fadeInLeft {
+    opacity: 1;
+    transform: translateX(108%);
+  }
+
+  &.fadeInRight {
+    opacity: 1;
+    transform: translateX(-31%);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f79007;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    padding: 10PX;
+    color: white;
+    font-size: 16px;
+  }
+
+  .point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f79007;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+    .point {
+      left: -5px;
+    }
+  }
+
+
+   .point {
+      right: -5px;
+    }
+
+
+
+.vertical-arrow {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #f79007;
+  z-index: 1;
+}
+.roadmap-image {
+  position: absolute;
+  transform: translateY(50%);
+  border-radius: 12px;
+  animation: float 2s ease-in-out infinite;
+  width: 150%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.roadmap-item.odd .roadmap-image {
+  right: 140%;
+}
+
+.roadmap-item.even .roadmap-image {
+  left: 140%;
+}
+
+@keyframes float {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+//@keyframes gradient-animation {
+//  0% {
+//    background-position: 0% 0%;
+//  }
+//  50% {
+//    background-position: 0% 100%;
+//  }
+//  100% {
+//    background-position: 0% 0%;
+//  }
+//}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

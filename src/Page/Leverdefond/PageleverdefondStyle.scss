@@ -1,0 +1,61 @@
+.containerpageleverFond {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  padding-bottom: 100px;
+}
+.containerpageleverFondAlloc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.containerRight {
+  width: 40%; /* Adjust as needed */
+  /* other styles */
+}
+
+.containerLeft {
+  width: 40%; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* other styles */
+}
+.titleContainerRight{
+  color: white;
+}
+.titleContainerRightAlloc{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.TextLeverdefond{
+  color: white;
+  text-align: center; /* to center the text inside the p tag */
+}
+
+.logoPageleverFond{
+  max-width: 100%; /* to ensure the images do not overflow the container */
+  margin-top: -120px;
+  border-radius: 50%;
+}
+.allocPageleverFond{
+  width: 650px;
+  object-fit: cover;
+  height: 500px;
+  border-radius: 12px
+
+}
+.containerPage{
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%);
+  width: 100%;
+  height: auto;
+}

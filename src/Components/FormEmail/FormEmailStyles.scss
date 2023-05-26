@@ -1,0 +1,176 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.containerEmail{
+  width: 100%;
+  background-color: #073242;
+  margin-top: -20px;
+}
+.titleEmail{
+  color: #f79007;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  margin-bottom: 70px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: -40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f79007;
+}
+
+.labelMessage{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+  height:300px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: black;
+}
+
+button[type="submit"] {
+  background-color: #f79007;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #f79001;
+}
+
+.containerEmailService{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%);
+}
+
+.containerImage{
+
+}
+.imageCarte{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  animation: slideInFromBottom 2s ease-out, heartbeat 1s ease-in-out infinite 2s;
+
+}
+.textEmailFooter{
+  color: white;
+}
+@media (max-width: 992px) {
+  .imageCarte {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .containerEmailService {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageCarte {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .titleEmail {
+    font-size: 24px;
+  }
+
+  .labelMessage {
+    height: 150px;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .imageCarte {
+    width: 250px;
+    height: 250px;
+  }
+
+  .containerImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textEmailFooter{
+    color: white;
+    width: 100%;
+    margin-top: -5px;
+    font-size: 16px;
+  }
+
+  .containerEmailService {
+    flex-direction: column;
+    align-items: center;
+  }
+}

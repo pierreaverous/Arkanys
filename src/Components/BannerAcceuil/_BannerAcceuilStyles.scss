@@ -1,0 +1,62 @@
+.containerAcceuil{
+  background-image: linear-gradient(to left, #073242 45%, #02e3dc 100%);
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerBanner{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+
+}
+.title-Banner{
+  width: 30%;
+}
+.title{
+  color: #f79007;
+
+}
+.textBanner{
+  color: white;
+  font-size: 16px;
+}
+.imageBanner {
+  object-fit: cover;
+  border: #f79007 2px solid;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px 12px 12px 12px;
+}
+.imageBanner:hover {
+  transform: translateY(0) scale(1.1);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(80%) scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1.1);
+    opacity: 1;
+  }
+}
+
+.title, .textBanner, .imageBanner {
+  opacity: 0;
+  transform: translateY(100%);
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+

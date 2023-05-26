@@ -1,0 +1,111 @@
+.titleMode{
+  display: flex;
+  justify-content: center;
+  color: #f79007;
+  padding-top: 50px;
+}
+
+.containerModeJeu{
+  width: 100%;
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenuModeJeu{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.mode{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardModetilte{
+  color: #f79007;
+  display: flex;
+  justify-content: center;
+
+
+}
+.cardimage{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px 12px 12px 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+
+}
+.cardimage:hover {
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 5s ease-in-out;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+
+}
+
+.textcardmode{
+  color: white;
+  width: 500px;
+  font-size: 16px;
+}
+.listescardmode{
+  color: white;
+  width: 500px;
+  font-size: 16px;
+}
+
+.showMoreButton {
+  background-color: #f79007;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+  box-shadow: 0 0 5px #f79007, 0 0 10px #f79007, 0 0 15px #f79007, 0 0 20px #f79007;
+
+  &:hover {
+    background-color: white;
+    color: #f79007;
+    text-shadow: none;
+    box-shadow: inset 0 0 5px #f79007, inset 0 0 10px #f79007, inset 0 0 15px #f79007, inset 0 0 20px #f79007;
+  }
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.cardModetilte:not(.hidden),
+.textcardmode:not(.hidden),
+.listescardmode:not(.hidden) {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.cardModetilte.hidden,
+.textcardmode.hidden,
+.listescardmode.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+}
