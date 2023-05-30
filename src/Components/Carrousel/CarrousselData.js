@@ -17,6 +17,17 @@ import guepi from '../../ASSETS/Images/Monstre/GUEPI.png';
 import horde from '../../ASSETS/Images/Monstre/horde scintilou.png';
 import rochelame from '../../ASSETS/Images/Monstre/Rochelame.png';
 import scorbut from '../../ASSETS/Images/Monstre/SCORBUT.png';
+import aspirine from '../../ASSETS/Images/Tower/aspirine.png'
+import canon from '../../ASSETS/Images/Tower/CANON.png'
+import glacier from '../../ASSETS/Images/Tower/GLACIER.png'
+import tourelle from '../../ASSETS/Images/Tower/tourelle.png'
+import poisonier from '../../ASSETS/Images/Tower/POISONIER.png'
+import ampoule from '../../ASSETS/Images/Tower/AMPOULE.png'
+import epine from "../../ASSETS/Images/skill/epine.png";
+import fortLevant from "../../ASSETS/Images/skill/fortLevant.png";
+import soins from "../../ASSETS/Images/skill/soins.png";
+import Ombre from "../../ASSETS/Images/skill/Ombre.png";
+import zap from "../../ASSETS/Images/skill/zap.png";
 
 
 export const heroes = [
@@ -124,3 +135,63 @@ export const Monster = [
         text: 'Scorpion enflammé, rapide et agile, infligeant des dégâts de feu sur la durée.',
     },
 ];
+export const tower = [
+    {
+        title: 'Aspirine',
+        img: aspirine,
+        text: 'Tour de défense qui soigne les alliés proches lorsqu\'elle n\'est pas en train d\'attaquer.',
+    },
+    {
+        title: 'Canon',
+        img: canon,
+        text: 'Tour de défense classique qui tire des projectiles sur les ennemis terrestres.',
+    },
+    {
+        title: 'Glacier',
+        img: glacier,
+        text: 'Tour de défense qui tire des projectiles glacés, ralentissant les ennemis touchés.',
+    },
+    {
+        title: 'Poisonier',
+        img: poisonier,
+        text: 'Tour de défense qui tire des fioles empoisonnés, infligeant des dégâts sur la durée aux ennemis touchés.',
+    },
+    {
+        title: 'Tourelle',
+        img: tourelle,
+        text: 'Tour de défense classique qui tire des projectiles sur les ennemis terrestres et aériens.',
+    },{
+        title: 'Ampoule',
+        img: ampoule,
+        text: 'Tour de défense électrique qui inflige des dégâts en chaîne aux ennemis proches.²',
+    },
+];
+
+export const  skill = [
+    {
+        title: "Eclat d'épines",
+        img: epine,
+        text: "Crée un tourbillon d'épines sur le champ de bataille, infligeant des dégâts aux ennemis qui le traversent.",
+    },
+    {
+        title: "Fort Levant",
+        img: fortLevant,
+        text: "Érige un mur de glace sur le champ de bataille, bloquant les attaques ennemies et ralentissant les unités qui le traversent.",
+    },
+    {
+        title: "Soins",
+        img: soins,
+        text: "Invoque une vague d'énergie purificatrice qui soigne les alliés dans la zone d'effet.",
+    },
+    {
+        title: "Ombre",
+        img: Ombre,
+        text: "Rend les troupes ciblées invisibles pendant un court laps de temps, évitant ainsi les attaques ennemies.",
+    },
+    {
+        title: "Zap",
+        img: zap,
+        text: "Electrocute un ennemi créant une chaîne d'électrocution aux troupes les plus proches.",
+    },
+];
+

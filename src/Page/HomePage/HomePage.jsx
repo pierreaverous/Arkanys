@@ -8,8 +8,9 @@ import ContainerLeverDefond from "../../Components/componentsPageLeverDeFond/con
 import logo from "../../ASSETS/Images/Logo/logo arcanys.png";
 import arkanys from "../../ASSETS/Images/Logo/arkanys.png";
 import Caroussel from "../../Components/Carrousel/Caroussel";
-import { heroes, Monster } from '../../Components/Carrousel/CarrousselData';
+import { heroes, skill, tower } from '../../Components/Carrousel/CarrousselData';
 import CarousselMonster from "../../Components/Carrousel/CarousselMonster";
+// import CaroussellePouvoir from "../../Components/Carrousel/CarrouselSkill";
 
 
 
@@ -19,7 +20,6 @@ const HomePage = () => {
       <>
         <NavBar />
         <BannerAcceuil/>
-        <BannerModeJeu/>
           <div className='containerPage'>
               <div className='containerpageleverFond'>
                   <div className='containerRight'>
@@ -38,15 +38,22 @@ const HomePage = () => {
                   </div>
               </div>
           </div>
+        <BannerModeJeu/>
           <div className='carrouselleContainer'>
               <h1 className='carrouselTitlePage'> Nos Héros</h1>
               <Caroussel items={heroes} />
           </div>
-          {/*<div className='carrouselleContainer'>*/}
-          {/*    <h1 className='carrouselTitlePage'> Nos Héros</h1>*/}
-          {/*    <Caroussel items={Monster} />*/}
-          {/*</div>*/}
           <CarousselMonster/>
+          <div className='test'>
+              <div className='carrouselleContainer'>
+                  <h1 className='carrouselTitlePage'> Nos Tours de défense</h1>
+                  <Caroussel items={tower} />
+              </div>
+              <div className='carrouselleContainer'>
+                  <h1 className='carrouselTitlePage'> Nos Skill</h1>
+                  <Caroussel items={skill} />
+              </div>
+          </div>
 
 
           <Footer/>
