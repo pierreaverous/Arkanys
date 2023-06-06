@@ -30,8 +30,16 @@ const NavBar = () => {
                     </div>
 
                     {/* Bouton du menu déroulant */}
-                    <div className='mobile-menu-icon' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        {isMenuOpen ? 'Close' : 'Menu'}
+                    <div className={`mobile-menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        {isMenuOpen ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#FFF" d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 0 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 0 1 1.414-1.414L12 10.586z" />
+                            </svg>
+                        ) : (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#FFF" d="M6 8h12v2H6zm0 4h12v2H6zm0 4h12v2H6z" />
+                            </svg>
+                        )}
                     </div>
                 </div>
             </header>

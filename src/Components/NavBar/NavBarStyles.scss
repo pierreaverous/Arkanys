@@ -2,7 +2,6 @@
   display: flex;
   align-items: baseline;
   background-image: linear-gradient(to right, #073242 70%, #02e3dc 100%);
-  //box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   align-items: center;
   top: 0px;
   height: 100px;
@@ -10,30 +9,45 @@
   z-index: 2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.container-logo-title{
+
+.container-logo-title {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-right:20px ;
 }
+
 .logo {
   width: 100px;
   border-radius: 50%;
 }
 
-.logoImages{
+.logoImages {
   width: 80%;
   object-fit: cover;
   margin-left: 20px;
   border-radius: 50%;
-  animation: heartbeat 2s infinite; // Ajoutez cette ligne pour appliquer l'animation
-
+  animation: heartbeat 2s infinite;
 }
-.buttonLink{
-  width: 100%;
+
+.buttonLink {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonLink.open {
+  transform: translateX(0);
 }
 
 .HeaderLink {
@@ -86,8 +100,9 @@
   }
 }
 
-
-
+.mobile-menu-icon {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .container-logo-title {
@@ -108,41 +123,43 @@
     padding-bottom: 10px;
     font-size: 16px;
   }
-}
-.mobile-menu-icon {
-  display: none; // le bouton du menu est caché par défaut
-  cursor: pointer;
-  font-size: 20px;
-  color: white;
-  margin-left: 20px;
-}
 
-.buttonLink {
-  position: absolute; // le menu est positionné absolument par rapport à la barre de navigation
-  top: 0;
-  left: 0; // le menu apparaîtra à gauche
-  height: 100vh; // le menu prendra toute la hauteur de l'écran
-  width: 250px; // largeur du menu
-  background-color: #073242; // couleur de fond du menu
-  transform: translateX(-100%); // le menu est caché par défaut
-  transition: transform 0.3s ease-in-out; // animation de transition
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.buttonLink.open {
-  transform: translateX(0); // lorsque le menu est ouvert, il est déplacé à gauche pour être visible
-}
-
-@media (max-width: 768px) {
   .mobile-menu-icon {
-    display: block; // le bouton du menu est visible pour les appareils mobiles
+    display: block;
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
     z-index: 3;
   }
 
   .buttonLink {
-    display: flex; // le menu est en mode flex pour les appareils mobiles
-    z-index: 3;
+    display: flex;
+    width: 45%;
+    background-color: #073242;
+  }
+
+  .buttonLink.open {
+    transform: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .buttonLink {
+    position: static;
+    top: auto;
+    left: auto;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
   }
 }
