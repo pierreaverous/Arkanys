@@ -153,6 +153,7 @@ button[type="submit"]:hover {
   .imageCarte {
     width: 250px;
     height: 250px;
+    margin-bottom: 30px;
   }
 
   .containerImage{
@@ -170,7 +171,7 @@ button[type="submit"]:hover {
   }
 
   .containerEmailService {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }

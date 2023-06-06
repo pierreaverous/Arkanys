@@ -111,3 +111,36 @@
     rotate: 180deg;
   }
 }
+@media (max-width: 768px) {
+  .carouselContainer {
+    height: auto;
+  }
+
+  .carousel {
+    width: 90%; // Reduced to 90% for smaller screens
+    height: auto;
+  }
+
+  .carousel-slide {
+    .card {
+      .card-image {
+        max-width: 100%; // To ensure the image does not overflow the container
+      }
+    }
+  }
+
+  .navigationButtons {
+
+    .prev-button,
+    .next-button {
+      margin-top: 260px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .prev-button {
+      margin-right: 0;
+    }
+  }
+}

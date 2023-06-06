@@ -67,3 +67,20 @@
   animation-timing-function: ease-out;
 }
 
+@media (max-width: 1025px) {
+  .containerBanner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-Banner,
+  .textBanner {
+    width: 90%;
+    text-align: center;
+  }
+
+  .imageBanner {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}

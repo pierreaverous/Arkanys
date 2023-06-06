@@ -109,3 +109,20 @@
   opacity: 0;
   transform: translateY(100%);
 }
+
+@media (max-width: 1024px) {
+  .contenuModeJeu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mode {
+    width: 90%;
+  }
+
+  .cardimage,
+  .textcardmode,
+  .listescardmode {
+    width: 90%;
+  }
+}

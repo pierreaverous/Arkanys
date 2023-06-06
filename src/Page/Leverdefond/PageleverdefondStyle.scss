@@ -59,3 +59,24 @@
   width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .containerpageleverFond,
+  .containerpageleverFondAlloc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerRight,
+  .containerLeft {
+    width: 90%; // Reduced to 90% for smaller screens
+  }
+
+  .allocPageleverFond {
+    width: 90%; // Reduced to 90% for smaller screens
+    height: auto; // To maintain aspect ratio
+    margin-top: 50px;
+  }
+  .logoPageleverFond{
+    margin-top: 30px;
+  }
+}

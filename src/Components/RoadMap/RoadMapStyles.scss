@@ -162,4 +162,81 @@
     background-position: 0% 50%;
   }
 }
+@media (max-width: 1024px) { // Tablette
+  .roadmap-item {
+    width: 90%;
+    margin-left: 2.5%;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    &.fadeInLeft,
+    &.fadeInRight {
+      transform: none;
+    }
+  }
+
+  .roadmap-image {
+    width: 100%;
+    position: static;
+    margin-bottom: 95px;
+    margin-top: -95px;
+    animation: none;
+  }
+
+  .roadmap-item.odd .roadmap-image,
+  .roadmap-item.even .roadmap-image {
+    right: auto;
+    left: auto;
+  }
+
+  .point {
+    display: none;
+  }
+
+  .vertical-arrow {
+    display: none;
+  }
+}
+@media (max-width: 768px) { // Téléphone
+  .roadmap-item {
+    width: 90%;
+    flex-direction: column;
+    margin-left: 2.5%;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    &.fadeInLeft,
+    &.fadeInRight {
+      transform: none;
+    }
+  }
+
+  .roadmap-image {
+    width: 100%;
+    position: static;
+    margin-top: -95px;
+    margin-bottom: 95px;
+    animation: none;
+  }
+
+  .roadmap-item.odd .roadmap-image,
+  .roadmap-item.even .roadmap-image {
+    right: auto;
+    left: auto;
+  }
+
+  .point {
+    display: none;
+  }
+
+  .vertical-arrow {
+    display: none;
+  }
+}
+
+
+
+
 

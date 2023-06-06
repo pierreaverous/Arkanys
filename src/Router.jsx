@@ -13,17 +13,13 @@ import LeverdeFondPage from "./Page/Leverdefond/LeverdeFondPage";
 const Router = () => {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/roadmap" element={<RoadMapPage />} />
                 <Route path="/lever-de-fond" element={<LeverdeFondPage/>} />
-
-
-
             </Routes>
-
         </BrowserRouter>
     )
 

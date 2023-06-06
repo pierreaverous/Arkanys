@@ -2,11 +2,7 @@
   "name": "arkanys",
   "version": "0.1.0",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pierreaverous/Arkanys.git"
-
-  },
+  "homepage": "https://pierreaverous.github.io/Arkanys",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -35,7 +31,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -b gh-pages"
-
   },
   "eslintConfig": {
     "extends": [

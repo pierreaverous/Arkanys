@@ -31,7 +31,7 @@ const HomePage = () => {
                   </div>
                   <div className='containerLeft'>
                       <img className='logoPageleverFond' src={logo} alt='logo'/>
-                      <p className='TextLeverdefond'>⚠️Méfiez-vous des sites Web frauduleux et non autorisés, des médias sociaux ou des comptes de messagerie prétendant représenter DeeLance. DeeLance n'assume aucune responsabilité pour les fausses déclarations et les dommages résultant de la tromperie délibérée perpétrée par des tiers frauduleux. Veuillez faire preuve de prudence à tout moment.
+                      <p className='TextLeverdefond'>⚠️Méfiez-vous des sites Web frauduleux et non autorisés, des médias sociaux ou des comptes de messagerie prétendant représenter Akanys. DeeLance n'assume aucune responsabilité pour les fausses déclarations et les dommages résultant de la tromperie délibérée perpétrée par des tiers frauduleux. Veuillez faire preuve de prudence à tout moment.
                           N'interagissez qu'avec des comptes DeeLance vérifiés.
                       </p>
                       <img  className='logoPageleverFond' src={arkanys} alt='logo'/>

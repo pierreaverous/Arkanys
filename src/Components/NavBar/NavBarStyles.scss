@@ -93,6 +93,7 @@
   .container-logo-title {
     flex-direction: column;
     justify-content: center;
+    z-index: 4;
   }
 
   .logo {
@@ -108,22 +109,40 @@
     font-size: 16px;
   }
 }
+.mobile-menu-icon {
+  display: none; // le bouton du menu est caché par défaut
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+}
 
-@media (max-width: 576px) {
-  .NavBar {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .buttonLink{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+.buttonLink {
+  position: absolute; // le menu est positionné absolument par rapport à la barre de navigation
+  top: 0;
+  left: 0; // le menu apparaîtra à gauche
+  height: 100vh; // le menu prendra toute la hauteur de l'écran
+  width: 250px; // largeur du menu
+  background-color: #073242; // couleur de fond du menu
+  transform: translateX(-100%); // le menu est caché par défaut
+  transition: transform 0.3s ease-in-out; // animation de transition
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonLink.open {
+  transform: translateX(0); // lorsque le menu est ouvert, il est déplacé à gauche pour être visible
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block; // le bouton du menu est visible pour les appareils mobiles
+    z-index: 3;
   }
 
-  .HeaderLink {
-    margin-right: 0;
-    margin-bottom: 10px;
-    padding-bottom: 0;
-    font-size: 14px;
+  .buttonLink {
+    display: flex; // le menu est en mode flex pour les appareils mobiles
+    z-index: 3;
   }
 }
