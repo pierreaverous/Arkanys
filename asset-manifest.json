@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Arkanys/static/css/main.4448c360.css",
-    "main.js": "/Arkanys/static/js/main.7e6a75f9.js",
+    "main.css": "/Arkanys/static/css/main.9b4bcdea.css",
+    "main.js": "/Arkanys/static/js/main.539c11ba.js",
     "static/media/Rochelame.png": "/Arkanys/static/media/Rochelame.2f2a47656ed1445de994.png",
     "static/media/celeste.png": "/Arkanys/static/media/celeste.8b906b593ef9d011bf3c.png",
     "static/media/soins.png": "/Arkanys/static/media/soins.229b0cdc3441128e6007.png",
@@ -47,11 +47,11 @@
     "static/media/logo arcanys.png": "/Arkanys/static/media/logo arcanys.8c415cb45fbfcb627896.png",
     "static/media/arkanys.png": "/Arkanys/static/media/arkanys.20b8b89f5fa75a8a19b8.png",
     "index.html": "/Arkanys/index.html",
-    "main.4448c360.css.map": "/Arkanys/static/css/main.4448c360.css.map",
-    "main.7e6a75f9.js.map": "/Arkanys/static/js/main.7e6a75f9.js.map"
+    "main.9b4bcdea.css.map": "/Arkanys/static/css/main.9b4bcdea.css.map",
+    "main.539c11ba.js.map": "/Arkanys/static/js/main.539c11ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.4448c360.css",
-    "static/js/main.7e6a75f9.js"
+    "static/css/main.9b4bcdea.css",
+    "static/js/main.539c11ba.js"
   ]
 }
