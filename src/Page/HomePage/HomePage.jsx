@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from 'react';
 import './_HomePageStyle.scss';
 import NavBar from "../../Components/NavBar/NavBar";
 import BannerAcceuil from "../../Components/BannerAcceuil/BannerAcceuil";
@@ -10,12 +10,27 @@ import arkanys from "../../ASSETS/Images/Logo/arkanys.png";
 import Caroussel from "../../Components/Carrousel/Caroussel";
 import { heroes, skill, tower } from '../../Components/Carrousel/CarrousselData';
 import CarousselMonster from "../../Components/Carrousel/CarousselMonster";
+import CarousselMonsterMobile from "../../Components/Carrousel/CarousselMonsterMobile";
 // import CaroussellePouvoir from "../../Components/Carrousel/CarrouselSkill";
 
 
 
 const HomePage = () => {
+    const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(() => {
+        const checkIsMobile = () => {
+            setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint value as per your design
+        };
+
+        checkIsMobile();
+
+        window.addEventListener('resize', checkIsMobile);
+
+        return () => {
+            window.removeEventListener('resize', checkIsMobile);
+        };
+    }, []);
   return(
       <>
         <NavBar />
@@ -43,7 +58,11 @@ const HomePage = () => {
               <h1 className='carrouselTitlePage'> Nos Héros</h1>
               <Caroussel items={heroes} />
           </div>
-          <CarousselMonster/>
+          {isMobile ? (
+              <CarousselMonsterMobile />
+          ) : (
+              <CarousselMonster />
+          )}
           <div className='test'>
               <div className='carrouselleContainer'>
                   <h1 className='carrouselTitlePage'> Nos Tours de défense</h1>

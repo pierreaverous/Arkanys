@@ -162,15 +162,14 @@
     top: auto;
     left: auto;
     height: auto;
-    width: auto;
+    width: 100%;
     background-color: transparent;
     transform: none;
     transition: none;
     flex-direction: row;
     align-items: baseline;
-    justify-content: flex-end;
   }
   .NavBar{
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
