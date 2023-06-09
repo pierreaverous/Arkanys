@@ -110,6 +110,9 @@
     justify-content: center;
     z-index: 4;
   }
+  .NavBar{
+    justify-content: space-between;
+  }
 
   .logo {
     margin-top: 5px;
@@ -124,14 +127,13 @@
     font-size: 16px;
   }
   .HeaderLink::after {
-
     bottom: -5px;
-
   }
 
   .mobile-menu-icon {
     display: block;
     margin-left: 20px;
+    margin-right: 40px;
     font-size: 20px;
     color: white;
     cursor: pointer;
@@ -140,8 +142,8 @@
 
   .buttonLink {
     display: flex;
-    width: 45%;
-    background-color: #073242;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #073242 70%, #02e3dc 100%);
     z-index: 1;
   }
 
@@ -167,5 +169,8 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: flex-end;
+  }
+  .NavBar{
+    justify-content: space-between;
   }
 }
