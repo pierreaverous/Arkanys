@@ -104,6 +104,32 @@ const cards = [
 ];
 
 const CarousselMonsterMobile = () => {
+    const [touchPosition, setTouchPosition] = useState(null);
+    const [isMoving, setIsMoving] = useState(false);
+
+    const handleTouchStart = (e) => {
+        setTouchPosition(e.touches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        const touchDown = touchPosition;
+
+        if (touchDown === null) {
+            return;
+        }
+
+        const currentTouch = e.touches[0].clientX;
+        const diff = touchDown - currentTouch;
+
+        if (diff > 5) {
+            handleNext();
+        } else if (diff < -5) {
+            handlePrev();
+        }
+
+        setTouchPosition(null);
+    };
+
     const [currentCard, setCurrentCard] = useState(0);
 
     const handleNext = () => {
@@ -119,11 +145,15 @@ const CarousselMonsterMobile = () => {
             <div className="carrouselTitleMobile">
                 <h2 className='titleMobile'>NOS MONSTRES</h2>
             </div>
-            <div className="cardMobile">
-                <img className="card-imageMobile" src={cards[currentCard].img} alt={cards[currentCard].title} />
-                <div className="card-contentMobile">
-                    <h2 className="card-titleMobile">{cards[currentCard].title}</h2>
-                    <p className="card-textMobile">{cards[currentCard].text}</p>
+            <div className="cardMobileTouch">
+                <div className="cardMobile"
+                     onTouchStart={handleTouchStart}
+                     onTouchMove={handleTouchMove}>
+                    <img className="card-imageMobile" src={cards[currentCard].img} alt={cards[currentCard].title} />
+                    <div className="card-contentMobile">
+                        <h2 className="card-titleMobile">{cards[currentCard].title}</h2>
+                        <p className="card-textMobile">{cards[currentCard].text}</p>
+                    </div>
                 </div>
             </div>
             <div className="carouselButtonsMobile">
