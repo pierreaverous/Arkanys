@@ -16,4 +16,15 @@
 }
 .TextLeverdefond{
   font-size: 18px;
+  color: white;
+  text-align: center; /* to center the text inside the p tag */
+
+}
+@media (max-width: 1024px) {
+  .TextLeverdefond{
+    margin-left: 5%;
+    width: 90%;
+    text-align: justify;
+  }
+
 }

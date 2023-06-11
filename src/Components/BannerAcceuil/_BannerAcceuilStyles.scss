@@ -31,6 +31,7 @@
 .textBanner{
   color: white;
   font-size: 16px;
+  text-align: justify;
 }
 .imageBanner {
   object-fit: cover;
@@ -73,10 +74,17 @@
     align-items: center;
   }
 
-  .title-Banner,
-  .textBanner {
-    width: 90%;
+  .title-Banner{
     text-align: center;
+    width: 90%;
+
+  }
+
+  .textBanner {
+    text-align: justify-all;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
   }
 
   .imageBanner {

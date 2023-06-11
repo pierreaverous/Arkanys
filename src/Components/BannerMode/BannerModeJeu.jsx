@@ -16,7 +16,7 @@ const BannerModeJeu = () => {
                     }
                 });
             },
-            { threshold: 0.9 }
+            { threshold: 0.1 }
         );
 
         elementsToAnimate.forEach((element) => {
@@ -38,7 +38,7 @@ const BannerModeJeu = () => {
     return(
         <div className='containerModeJeu'>
             <h1 className='titleMode'>Modes de jeu :</h1>
-            <h2 className='titleH2Mode'>Notre jeu proposera à terme plusieurs variantes pour satisfaire tous les types de joueurs. Que vous préfériez les combats en arène, les défis en coopération ou les campagnes solo, vous trouverez un mode de jeu qui vous convient. Chaque mode offre des récompenses uniques et des expériences de jeu passionnantes.</h2>
+            <h2 className='titleH2ModeJeu'>Notre jeu proposera à terme plusieurs variantes pour satisfaire tous les types de joueurs. Que vous préfériez les combats en arène, les défis en coopération ou les campagnes solo, vous trouverez un mode de jeu qui vous convient. Chaque mode offre des récompenses uniques et des expériences de jeu passionnantes.</h2>
             <div className='contenuModeJeu'>
                 <div className='mode'>
                     <h2 className='cardModetilte animated  hidden'>Arkanys Arena</h2>

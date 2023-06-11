@@ -55,6 +55,7 @@
   color: white;
   width: 500px;
   font-size: 16px;
+  text-align: justify;
 }
 .listescardmode{
   color: white;
@@ -82,7 +83,15 @@
   }
 }
 
-
+.titleH2ModeJeu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  font-size: 18px;
+}
 @keyframes slide-up {
   0% {
     transform: translateY(100%);
@@ -109,6 +118,16 @@
   opacity: 0;
   transform: translateY(100%);
 }
+@keyframes slide-up-mobile {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 1024px) {
   .contenuModeJeu {
@@ -124,5 +143,20 @@
   .textcardmode,
   .listescardmode {
     width: 90%;
+  }
+  .cardModetilte:not(.hidden),
+  .textcardmode:not(.hidden),
+  .listescardmode:not(.hidden) {
+    animation-name: slide-up-mobile;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+  }
+  .cardModetilte.hidden,
+  .textcardmode.hidden,
+  .listescardmode.hidden {
+    opacity: 0;
+    transform: translateY(50%);
   }
 }
