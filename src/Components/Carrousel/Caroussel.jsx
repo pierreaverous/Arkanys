@@ -5,9 +5,13 @@ import ChevronLeft from '../../ASSETS/Images/Icon/chevronLeft.png';
 
 const Caroussel = ({ items }) => {
     const carouselRef = useRef(null);
+    const rotationRef = useRef(0); // Ajout d'un useRef pour rotation
     const [selectedItemIndex, setSelectedItemIndex] = useState(0);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
+
+    const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
+    const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
 
     useEffect(() => {
         const carousel = carouselRef.current;
@@ -15,22 +19,21 @@ const Caroussel = ({ items }) => {
         if (carousel) {
             const slides = carousel.getElementsByClassName('carousel-slide');
             const angle = (2 * Math.PI) / slides.length;
-            let rotation = 0;
 
             const updateCarousel = () => {
                 for (let i = 0; i < slides.length; i++) {
-                    const slideRotation = i * angle + rotation;
+                    const slideRotation = i * angle + rotationRef.current; // Utiliser rotationRef.current
                     slides[i].style.transform = `rotateY(${slideRotation}rad) translateZ(400px)`;
                 }
             };
 
             const goToPrevSlide = () => {
-                rotation += angle;
+                rotationRef.current += angle; // Utiliser rotationRef.current
                 updateCarousel();
             };
 
             const goToNextSlide = () => {
-                rotation -= angle;
+                rotationRef.current -= angle; // Utiliser rotationRef.current
                 updateCarousel();
             };
 
@@ -38,7 +41,7 @@ const Caroussel = ({ items }) => {
 
             const selectCard = (index) => {
                 setSelectedItemIndex(index);
-                rotation = -index * angle;
+                rotationRef.current = -index * angle; // Utiliser rotationRef.current
                 updateCarousel();
             };
 
@@ -50,8 +53,8 @@ const Caroussel = ({ items }) => {
             carousel.addEventListener('nextItem', goToNextSlide);
 
             // Ajout des écouteurs d'événements pour le touch
-            carousel.addEventListener('touchstart', (e) => setTouchStart(e.targetTouches[0].clientX));
-            carousel.addEventListener('touchmove', (e) => setTouchEnd(e.targetTouches[0].clientX));
+            carousel.addEventListener('touchstart', handleTouchStart);
+            carousel.addEventListener('touchmove', handleTouchMove);
             carousel.addEventListener('touchend', handleTouch);
 
             function handleTouch() {
@@ -72,8 +75,8 @@ const Caroussel = ({ items }) => {
                 });
                 carousel.removeEventListener('prevItem', goToPrevSlide);
                 carousel.removeEventListener('nextItem', goToNextSlide);
-                carousel.removeEventListener('touchstart', (e) => setTouchStart(e.targetTouches[0].clientX));
-                carousel.removeEventListener('touchmove', (e) => setTouchEnd(e.targetTouches[0].clientX));
+                carousel.removeEventListener('touchstart', handleTouchStart);
+                carousel.removeEventListener('touchmove', handleTouchMove);
                 carousel.removeEventListener('touchend', handleTouch);
             };
         }
