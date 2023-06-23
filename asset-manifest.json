@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Arkanys/static/css/main.d947ce77.css",
-    "main.js": "/Arkanys/static/js/main.c35d92fe.js",
+    "main.js": "/Arkanys/static/js/main.018db97a.js",
     "static/media/Rochelame.png": "/Arkanys/static/media/Rochelame.2f2a47656ed1445de994.png",
     "static/media/celeste.png": "/Arkanys/static/media/celeste.8b906b593ef9d011bf3c.png",
     "static/media/soins.png": "/Arkanys/static/media/soins.229b0cdc3441128e6007.png",
@@ -48,10 +48,10 @@
     "static/media/arkanys.png": "/Arkanys/static/media/arkanys.20b8b89f5fa75a8a19b8.png",
     "index.html": "/Arkanys/index.html",
     "main.d947ce77.css.map": "/Arkanys/static/css/main.d947ce77.css.map",
-    "main.c35d92fe.js.map": "/Arkanys/static/js/main.c35d92fe.js.map"
+    "main.018db97a.js.map": "/Arkanys/static/js/main.018db97a.js.map"
   },
   "entrypoints": [
     "static/css/main.d947ce77.css",
-    "static/js/main.c35d92fe.js"
+    "static/js/main.018db97a.js"
   ]
 }
