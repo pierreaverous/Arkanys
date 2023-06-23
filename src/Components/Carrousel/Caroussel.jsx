@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import './CarousselStyle.scss';
 import ChevronRight from '../../ASSETS/Images/Icon/iconschevron-right.png';
@@ -7,6 +6,8 @@ import ChevronLeft from '../../ASSETS/Images/Icon/chevronLeft.png';
 const Caroussel = ({ items }) => {
     const carouselRef = useRef(null);
     const [selectedItemIndex, setSelectedItemIndex] = useState(0);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
 
     useEffect(() => {
         const carousel = carouselRef.current;
@@ -45,18 +46,38 @@ const Caroussel = ({ items }) => {
                 slide.addEventListener('click', () => selectCard(index));
             });
 
-            carousel.addEventListener('prevItem', goToPrevSlide); // Utiliser 'prevItem' au lieu de 'prevSlide'
-            carousel.addEventListener('nextItem', goToNextSlide); // Utiliser 'nextItem' au lieu de 'nextSlide'
+            carousel.addEventListener('prevItem', goToPrevSlide);
+            carousel.addEventListener('nextItem', goToNextSlide);
+
+            // Ajout des écouteurs d'événements pour le touch
+            carousel.addEventListener('touchstart', (e) => setTouchStart(e.targetTouches[0].clientX));
+            carousel.addEventListener('touchmove', (e) => setTouchEnd(e.targetTouches[0].clientX));
+            carousel.addEventListener('touchend', handleTouch);
+
+            function handleTouch() {
+                if (touchStart - touchEnd > 150) {
+                    // Swipe gauche
+                    goToNextSlide();
+                }
+
+                if (touchStart - touchEnd < -150) {
+                    // Swipe droite
+                    goToPrevSlide();
+                }
+            }
 
             return () => {
                 Array.from(slides).forEach((slide, index) => {
                     slide.removeEventListener('click', () => selectCard(index));
                 });
-                carousel.removeEventListener('prevItem', goToPrevSlide); // Utiliser 'prevItem' au lieu de 'prevSlide'
-                carousel.removeEventListener('nextItem', goToNextSlide); // Utiliser 'nextItem' au lieu de 'nextSlide'
+                carousel.removeEventListener('prevItem', goToPrevSlide);
+                carousel.removeEventListener('nextItem', goToNextSlide);
+                carousel.removeEventListener('touchstart', (e) => setTouchStart(e.targetTouches[0].clientX));
+                carousel.removeEventListener('touchmove', (e) => setTouchEnd(e.targetTouches[0].clientX));
+                carousel.removeEventListener('touchend', handleTouch);
             };
         }
-    }, [carouselRef.current]);
+    }, [carouselRef.current, touchStart, touchEnd]);
 
     return (
         <div className="carouselContainer">
