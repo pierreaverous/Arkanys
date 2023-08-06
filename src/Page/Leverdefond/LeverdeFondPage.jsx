@@ -5,7 +5,10 @@ import ContainerLeverDefond from "../../Components/componentsPageLeverDeFond/con
 import './PageleverdefondStyle.scss'
 import logo from '../../ASSETS/Images/Logo/logo arcanys.png'
 import arkanys from '../../ASSETS/Images/Logo/arkanys.png'
-import alloc from '../../ASSETS/Images/ImgLeverFond/alloc.png'
+import allocino from '../../ASSETS/Images/ImgLeverFond/allocIno.png'
+import allocPrivate from '../../ASSETS/Images/ImgLeverFond/allocprivasale.png'
+import allocPresaleIno from '../../ASSETS/Images/ImgLeverFond/allocPresaleIno.png'
+import allocfees from '../../ASSETS/Images/ImgLeverFond/allocfees.png'
 
 
 const leverdeFondPage = () => {
@@ -41,13 +44,13 @@ const leverdeFondPage = () => {
                         </div>
                     </div>
                     <div className='containerLeft'>
-                        <img className='allocPageleverFond' src={alloc} alt='logo'/>
+                        <img className='allocPageleverFond' src={allocPrivate} alt='logo'/>
 
                     </div>
                 </div>
             </div>
             <div className='containerPage'>
-                <h1 className='titleContainerRightAlloc'>ARKANYS - PRIVATE SALE</h1>
+                <h1 className='titleContainerRightAlloc'>ARKANYS - Allocation Presale + ICO</h1>
                 <div className='containerpageleverFondAlloc'>
                     <div className='containerRight'>
                         <div className='containRight'>
@@ -56,12 +59,12 @@ const leverdeFondPage = () => {
                         </div>
                     </div>
                     <div className='containerLeft'>
-                        <img className='allocPageleverFond' src={alloc} alt='logo'/>
+                        <img className='allocPageleverFond' src={allocino} alt='logo'/>
 
                     </div>
                 </div>
             </div> <div className='containerPage'>
-            <h1 className='titleContainerRightAlloc'>ARKANYS - PRIVATE SALE</h1>
+            <h1 className='titleContainerRightAlloc'>ARKANYS - Allocation Fees </h1>
             <div className='containerpageleverFondAlloc'>
                 <div className='containerRight'>
                     <div className='containRight'>
@@ -70,7 +73,7 @@ const leverdeFondPage = () => {
                     </div>
                 </div>
                 <div className='containerLeft'>
-                    <img className='allocPageleverFond' src={alloc} alt='logo'/>
+                    <img className='allocPageleverFond' src={allocfees} alt='logo'/>
 
                 </div>
             </div>

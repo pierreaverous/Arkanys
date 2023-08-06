@@ -1,0 +1,18 @@
+// Pages/ContactPage/ContactPage.scss
+
+.contact-page {
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%); // Utilisation du gradient de votre SCSS existant
+
+  .contact-content {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-form {
+      width: 80%;
+      margin-bottom: 30px;
+      // Vous pouvez ajouter des styles supplémentaires pour le formulaire de contact ici
+    }
+  }
+}

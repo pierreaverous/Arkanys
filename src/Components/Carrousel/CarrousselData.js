@@ -3,6 +3,7 @@ import celeste from '../../ASSETS/Images/HerosARKANYS/celeste.png';
 import ramedo from '../../ASSETS/Images/HerosARKANYS/RAMEDO.png';
 import ombrage from '../../ASSETS/Images/HerosARKANYS/Ombrage.png';
 import nicedem from '../../ASSETS/Images/HerosARKANYS/NICEDEM.png';
+import gardien from '../../ASSETS/Images/HerosARKANYS/gardien.png'
 import bellier from '../../ASSETS/Images/Monstre/Bellier.png';
 import chevre from '../../ASSETS/Images/Monstre/Chevaucheuse de Chevre.png';
 import colosse from '../../ASSETS/Images/Monstre/COLOSSE.png';
@@ -58,7 +59,7 @@ export const heroes = [
     },
     {
         title: 'Gardien de la fôret',
-        img: ombrage,
+        img: gardien,
         text: 'Le Gardien de la Forêt est un héros mystique qui contrôle la nature pour protéger ses alliés et affaiblir ses ennemis.',
     },
 ];
