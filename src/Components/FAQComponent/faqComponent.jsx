@@ -1,52 +1,23 @@
-// Components/FAQ/FAQ.js
-import React from 'react';
-import './faqComponents.scss'
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import './faqComponents.scss';
 
 const FAQComponents = () => {
-    const questionsAnswers = [
-        {
-            question: "Question 1?",
-            answer: "Réponse à la question 1."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        {
-            question: "Question 2?",
-            answer: "Réponse à la question 2."
-        },
-        // ... ajoutez autant de questions/réponses que nécessaire
-    ];
+    const [openIndex, setOpenIndex] = useState(null);
+    const { t } = useTranslation();
+    const questionsAnswers = t('faq.questions', { returnObjects: true });
 
     return (
         <div className="faq-section">
-            <h2>Foire aux questions</h2>
+            <h2>{t('faq.title')}</h2>
             <div className='containerFaq'>
                 {questionsAnswers.map((item, index) => (
                     <div key={index} className="faq-item">
-                        <h3>{item.question}</h3>
-                        <p>{item.answer}</p>
+                        <h3 onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+                            {item.question}
+                            <span className={`arrow ${openIndex === index ? 'up' : 'down'}`}></span>
+                        </h3>
+                        {openIndex === index && <p>{item.answer}</p>}
                     </div>
                 ))}
             </div>

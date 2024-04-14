@@ -1,0 +1,357 @@
+{
+  "BannerAcceuil": {
+    "title": "Welcome to Arkanys",
+    "description": "Welcome to the fascinating universe of our blockchain mobile game, where you can collect heroes, monsters, and gear, engage in captivating game modes, and enjoy a dynamic market. Dive into an epic adventure and discover how to play for free, earn tokens, and enhance your characters to dominate your opponents."
+  },
+
+  "BannerModeJeu": {
+    "title": "Game Modes:",
+    "description": "Our game will eventually offer several variants to satisfy all types of players. Whether you prefer arena combat, cooperative challenges, or solo campaigns, you will find a game mode that suits you. Each mode offers unique rewards and thrilling gameplay experiences.",
+    "mode1Title": "Arkanys Arena",
+    "mode1Description": "The 'Arkanys Arena' mode of Arkanys offers an immersive and strategic gameplay experience for players looking for competitive challenges. This mode emphasizes deck customization, resource management, and progression through different arenas, providing a rich and captivating gameplay experience.",
+    "mode1Extended": [
+      "The gameplay of 'Arkanys Arena' is based on turn-based combat between two players, each having 150 seconds to play during a match and 15 seconds per turn. The fights take place in different arenas, each offering increasing rewards and challenges.",
+      "During the battles, players deploy their units and cast spells using ether, a resource that regenerates automatically throughout the game. Each unit and spell has an ether cost, forcing players to make strategic decisions on how to manage their resources to effectively deploy their troops and win the battle.",
+      "If no player has achieved one of the two objectives (eliminate all opposing characters or destroy the towers) within the allotted 5 minutes, an extension is triggered. During this extension, each player receives an additional 60 seconds and the allocation of ether is increased per turn, intensifying the action and encouraging players to develop more aggressive strategies to win.",
+      "Victories earn trophies to progress in the rankings and access more significant rewards. Furthermore, victories allow players to win chests containing hero cards, monsters, equipment, and spells to enhance and personalize their decks."
+    ],
+    "mode2Title": "The World of Tokenia: Guardians of Arkanys",
+    "mode2Description": "The Guardians of Arkanys (LGA) is the final game mode of Arkanys. In this mode, players explore a vast world filled with monsters, quests, and challenges. Heroes, monsters, and equipment enhanced in other game modes are essential for progressing in LGA, where players will face increasingly powerful enemies and solve complex puzzles to advance the story.",
+    "mode2Extended": [
+      "LGA is a role-playing and exploration game where players control their hero and his team of monsters in an open and interactive world. The fights in LGA are based on a turn-based combat system, where players must use strategy and thought to defeat their enemies.",
+      "Players will also need to solve puzzles, complete quests, and interact with non-player characters to progress the story and unlock new areas to explore.",
+      "The rewards earned in LGA, such as hero cards, monsters, equipment, and resources, can be used to enhance and personalize the decks in all game modes, thus strengthening the interconnection between modes and encouraging players to discover and enjoy all facets of Arkanys.",
+      "Exploration and quests: Players will explore a vast open world filled with various environments, points of interest, and monsters to confront. They will be able to complete quests to progress the story and unlock new areas.",
+      "PvM - Monster combat: Players can form groups to fight monsters in tactical turn-based combat. Each monster will have unique characteristics and skills, requiring players to develop strategies to defeat them. PvM fights will offer rewards in the form of experience, items, and resources.",
+      "PvP - Player vs. Player combat: Players can also compete in PvP combat in turn-based matches. These fights can be organized in dedicated arenas, allowing players to showcase their skills and compete against other players to win rewards and improve their rankings.",
+      "Customization and progression: Players can customize and enhance their heroes by acquiring new equipment, skills, and familiars. They will gain experience by fighting monsters and other players, allowing them to level up and unlock new abilities.",
+      "Cooperation and social interaction: Players can join guilds and cooperate with other players to take on more challenging PvM and PvP challenges. Communication and coordination with teammates will be essential to succeed in the most difficult fights.",
+      "Rewards and game economy: Players will earn rewards by completing quests, fighting monsters, and participating in PvP combat. They can trade these rewards on the market to obtain rare items and improve their heroes."
+    ],
+    "common": {
+      "see_more": "See More",
+      "see_less": "See Less"
+    },
+    "items": {
+      "heroes": [
+        {
+          "title": "Blade Breaker",
+          "text": "This bold and fearless warrior specializes in powerful attacks and area damage."
+        },
+        {
+          "title": "Celeste",
+          "text": "A defensive mage who summons barriers to protect allies and control the battlefield."
+        },
+        {
+          "title": "Ramedo",
+          "text": "A powerful sorcerer who manipulates time to slow enemies, speed up allies, and deal damage from afar."
+        },
+        {
+          "title": "Shadow",
+          "text": "A stealthy and deadly assassin who moves unseen to deliver heavy damage to unsuspecting enemies."
+        },
+        {
+          "title": "Nicedem",
+          "text": "An agile healer who uses the powers of the winds to heal allies and attack enemies from a distance."
+        },
+        {
+          "title": "Forest Guardian",
+          "text": "The Forest Guardian is a mystical hero who controls nature to protect his allies and weaken his enemies."
+        }
+      ],
+      "towers": [
+        {
+          "title": "Aspirin",
+          "text": "A defense tower that heals nearby allies when not attacking."
+        },
+        {
+          "title": "Cannon",
+          "text": "A classic defense tower that fires projectiles at ground enemies."
+        },
+        {
+          "title": "Glacier",
+          "text": "A defense tower that shoots icy projectiles, slowing down the enemies hit."
+        },
+        {
+          "title": "Poisonier",
+          "text": "A defense tower that shoots poisoned vials, inflicting damage over time on touched enemies."
+        },
+        {
+          "title": "Turret",
+          "text": "A classic defense tower that shoots projectiles at ground and air enemies."
+        },
+        {
+          "title": "Bulb",
+          "text": "An electric defense tower that deals chain damage to nearby enemies."
+        }
+      ],
+      "skills": [
+        {
+          "title": "Thorn Burst",
+          "text": "Creates a whirlwind of thorns on the battlefield, dealing damage to enemies that pass through it."
+        },
+        {
+          "title": "Fort Levant",
+          "text": "Erects a wall of ice on the battlefield, blocking enemy attacks and slowing units that pass through it."
+        },
+        {
+          "title": "Healing",
+          "text": "Summons a wave of purifying energy that heals allies within the effect area."
+        },
+        {
+          "title": "Shadow",
+          "text": "Renders targeted troops invisible for a short time, thus avoiding enemy attacks."
+        },
+        {
+          "title": "Zap",
+          "text": "Electrocutes an enemy, creating a chain of electrocution to the nearest troops."
+        }
+      ]
+    }
+
+  },
+  "monsters": {
+    "title": "Our Monsters",
+    "cards": [
+      {
+        "title": "Bellier",
+        "text": "This massive ram is equipped with heavy armor and a ram-shaped head, used to demolish enemy towers and defenses."
+      },
+      {
+        "title": "Chevaucheuse de Chevre",
+        "text": "Armed with a powerful lance, she attacks both at a distance and in close combat."
+      },
+      {
+        "title": "Colosse",
+        "text": "Stone giant focused solely on destroying enemy towers and defenses."
+      },
+      {
+        "title": "Dragounet de Glace",
+        "text": "Small flying dragon that attacks enemies on the ground and in the air by spitting ice balls."
+      },
+      {
+        "title": "Drogon",
+        "text": "Charges at towers and defenses with blazing speed. Immune to ground unit attacks and focuses exclusively on structures."
+      },
+      {
+        "title": "Ekipic",
+        "text": "Agile and resilient, this amazing monster can reflect damage back at its attackers with a unique defense mechanism."
+      },
+      {
+        "title": "Floragide",
+        "text": "Plant humanoid capable of launching distance attacks and healing nearby allies."
+      },
+      {
+        "title": "Gelatin",
+        "text": "A slow-moving gelatinous creature that absorbs part of the damage received."
+      },
+      {
+        "title": "Goblin Volant",
+        "text": "A duo of fast and agile flying creatures that attack enemies on the ground and in the air."
+      },
+      {
+        "title": "Gribouille",
+        "text": "Fast and luminous cat with a temporary camouflage ability."
+      },
+      {
+        "title": "Guepi",
+        "text": "A formidable flying creature that attacks enemy units, including other air units."
+      },
+      {
+        "title": "Horde Scintilou",
+        "text": "A quartet of fast-flying little birds that unleash mini-lightning bolts on their enemies."
+      },
+      {
+        "title": "Rochelame",
+        "text": "Small robust and powerful stone golem with an area attack."
+      },
+      {
+        "title": "Scorbut",
+        "text": "A fast and agile flaming scorpion that inflicts fire damage over time."
+      }
+    ]
+  },
+  "leverdefond": {
+    "title": "1 ARK$ = XXXX$",
+    "initialGoal": "Initial Goal Sale = $390,000",
+    "timeLeft": "Time Left:",
+    "untilPriceIncrease": "Until Price Increase to XXX$",
+    "launchPrice": "Launch Price: 1 ARK$ = XXX USDT",
+    "buyNowInUSDT": "BUY NOW IN USDT",
+    "buyNowInFiat": "BUY NOW IN FIAT"
+  },
+  "footer": {
+    "legalNotice": "Legal Notice",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "email": "Email: Hello@arkanys.io",
+    "contactPage": "Contact Page"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "name": "Name:",
+    "email": "Email:",
+    "phone": "Phone:",
+    "message": "Message:",
+    "sendButton": "Send",
+    "successMessage": "Email sent successfully!"
+  },
+  "navBar": {
+    "home": "ACCUEIL",
+    "gameModes": "MODES DE JEU",
+    "roadmap": "ROAD MAP",
+    "fundraising": "LEVÉE DE FONDS",
+    "contact": "CONTACT",
+    "faq": "FAQ",
+    "whitePaper": "WHITE PAPER"
+  },
+  "roadmap": {
+    "title": "ROADMAP",
+    "quarters": [
+      {
+        "title": "Quarter 1",
+        "items": [
+          "White paper v1",
+          "Conceptualization of hero, minion, spell, and equipment designs",
+          "Financial needs assessment",
+          "Human resources needs assessment",
+          "Marketing plan development",
+          "Investor search for the private sale of ARK$ token",
+          "Development plans for interconnected marketplace",
+          "Development plans for setting up a DAO"
+        ]
+      },
+      {
+        "title": "Quarter 2",
+        "items": [
+          "Initial token sale / SAFT",
+          "Team recruitment",
+          "Publication of white paper v2",
+          "Seed sale",
+          "Design creations",
+          "Development of maps and gameplay for 'Arkanys Arena' mode",
+          "Private sale",
+          "Team expansion"
+        ]
+      },
+      {
+        "title": "Quarter 3",
+        "items": [
+          "NFT development",
+          "Alpha launch on testnet for 'Arkanys Arena' mode",
+          "INO",
+          "Marketplace development",
+          "Mega Giveaway"
+        ]
+      },
+      {
+        "title": "Quarter 4",
+        "items": [
+          "Preparation and launch of presale and 3 ICO rounds",
+          "Finalization of 'Arkanys Arena' mode",
+          "TGE of ARK$ token"
+        ]
+      },
+      {
+        "title": "Quarter 5",
+        "items": [
+          "Development of 'LGA' mode",
+          "Setup of semi-DAO and integration of active community members",
+          "Organization of the first Giga Giveaway"
+        ]
+      },
+      {
+        "title": "Quarter 6",
+        "items": [
+          "Alpha of 'LGA' mode",
+          "Development of 'lands' for the metaverse",
+          "Organization of the second real-life community event"
+        ]
+      },
+      {
+        "title": "Quarter 7",
+        "items": [
+          "Open beta of 'LGA' mode",
+          "Sale of 'lands' for the metaverse",
+          "Organization of the second Mega Giveaway 'marketing stunt'"
+        ]
+      },
+      {
+        "title": "Quarter 8",
+        "items": [
+          "Consolidation and improvement of all game modes",
+          "Organization of the third real-life community event",
+          "Celebration of the project's anniversary with a special Mega Giveaway",
+          "Official release of 'LGA' mode"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "What is the long-term vision of Arkanys?",
+        "answer": "Arkanys aims to democratize gaming through blockchain technology. The goal is not to create a short-term project but to build a true ecosystem where users can fully leverage the potential of blockchain gaming."
+      },
+      {
+        "question": "How can I invest in Arkanys?",
+        "answer": "The schedule for various fundraising rounds is available under the corresponding tab. We are currently in the Seed Sale phase in FIAT currency. If you wish to invest now, you can fill out the contact form selecting 'I wish to invest', and a team member will contact you."
+      },
+      {
+        "question": "What are the strategic partnerships of Arkanys?",
+        "answer": "Arkanys will primarily surround itself with major players in blockchain technologies and gaming. Partners may include investors, gamers, advisors, or targeted influencers."
+      },
+      {
+        "question": "What are the benefits of owning ARK$ tokens?",
+        "answer": "The token will primarily serve as a medium of exchange, similar to virtual currencies available in most video games. The ARK$ token will be essential throughout the project. The long-term goal is to link other projects to this token, making it a universal token in the world of blockchain gaming."
+      },
+      {
+        "question": "What are the unique advantages of Arkanys compared to other blockchain games?",
+        "answer": "Arkanys stands out with its rich and immersive universe, offering a free-to-play and skill-to-earn gaming experience. It incorporates elements of tower defense, hero collection, and monster collection, and enables true asset ownership through NFTs. Arkanys' DAO allows active community participation in the governance of the game. Furthermore, the commitment to social and environmental responsibility adds a unique ethical dimension to the project."
+      },
+      {
+        "question": "How does Arkanys ensure the security of data and transactions?",
+        "answer": "Arkanys takes data and transaction security very seriously. Security is ensured through blockchain technology, which records all transactions in a decentralized ledger, making them transparent, immutable, and verifiable by all community members. Sensitive information, such as private keys and account data, is encrypted using modern cryptographic algorithms. Two-factor authentication (2FA) may be offered for user accounts, adding an extra layer of security at login. Compliance with industry regulations and security standards ensures that best practices are followed."
+      },
+      {
+        "question": "What is Arkanys' policy on social and environmental responsibility?",
+        "answer": "Arkanys is committed to social and environmental responsibility by supporting charitable initiatives and minimizing its carbon footprint. A portion of the game's revenue is allocated to social and environmental causes. Additionally, Arkanys explores solutions to make blockchain operations more energy-efficient, aligning the game with sustainable values."
+      },
+      {
+        "question": "How can I join the Arkanys community and actively participate?",
+        "answer": "You can join us on various channels such as Twitter, LinkedIn, and Discord."
+      },
+      {
+        "question": "How can I keep up with updates and announcements from Arkanys?",
+        "answer": "All the latest announcements are available on our Discord or Twitter account."
+      },
+      {
+        "question": "What is the future development roadmap for Arkanys?",
+        "answer": "We are currently at version 1.0 of the roadmap, which is indicative to give users an insight into the project's ambitions over the next two years."
+      },
+      {
+        "question": "How can I get technical or customer support for Arkanys?",
+        "answer": "To obtain technical or customer support, you can email us at support@arkanys.io, and we will respond within 48 hours."
+      },
+      {
+        "question": "Are there any career opportunities at Arkanys?",
+        "answer": "Job offers can be viewed on our LinkedIn page."
+      },
+      {
+        "question": "What is Arkanys' privacy policy?",
+        "answer": "You can view our privacy policy on the 'Privacy Policy' page."
+      },
+      {
+        "question": "Who are the founders?",
+        "answer": "The founders are young French enthusiasts of video games and new technologies."
+      },
+      {
+        "question": "Are there any geographical restrictions for playing Arkanys or investing in the ARK$ token?",
+        "answer": "No. If you have a PC and an internet connection, you can play or invest anywhere in the world."
+      }
+    ]
+  }
+
+
+}

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composants
+import { useTranslation } from 'react-i18next';
 import './CarousselStyle.scss';
 import ChevronRight from '../../ASSETS/Images/Icon/iconschevron-right.png';
 import ChevronLeft from '../../ASSETS/Images/Icon/chevronLeft.png';
-
-const Caroussel = ({ items }) => {
+const Caroussel = ({ items, type }) => {
+    const { t } = useTranslation(); // Utiliser useTranslation pour accéder à la fonction t
     const carouselRef = useRef(null);
     const rotationRef = useRef(0); // Ajout d'un useRef pour rotation
     const [selectedItemIndex, setSelectedItemIndex] = useState(0);
@@ -86,26 +88,25 @@ const Caroussel = ({ items }) => {
         <div className="carouselContainer">
             <div className="carousel" ref={carouselRef}>
                 {items.map((item, index) => (
-                    <div
-                        className={`carousel-slide ${selectedItemIndex === index ? 'selected' : ''}`}
-                        key={index}
-                    >
+                    <div className={`carousel-slide ${selectedItemIndex === index ? 'selected' : ''}`} key={index}>
                         <div className="card">
-                            <img className="card-image" src={item.img} alt={item.title} />
+                            <img className="card-image" src={item.img} alt={t(`items.${type}.${index}.title`)}/>
                             <div className="card-content">
-                                <h2 className="card-title">{item.title}</h2>
-                                <p className="card-text">{item.text}</p>
+                                <h2 className="card-title">{t(`items.${type}.${index}.title`)}</h2>
+                                <p className="card-text">{t(`items.${type}.${index}.text`)}</p>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
             <div className="navigationButtons">
-                <button className="prev-button" onClick={() => carouselRef.current.dispatchEvent(new Event('prevItem'))}>
-                    <img src={ChevronLeft} alt="Previous" />
+                <button className="prev-button"
+                        onClick={() => carouselRef.current.dispatchEvent(new Event('prevItem'))}>
+                    <img src={ChevronLeft} alt="arrow"/>
                 </button>
-                <button className="next-button" onClick={() => carouselRef.current.dispatchEvent(new Event('nextItem'))}>
-                    <img src={ChevronRight} alt="Next" />
+                <button className="next-button"
+                        onClick={() => carouselRef.current.dispatchEvent(new Event('nextItem'))}>
+                    <img src={ChevronRight} alt="arrow"/>
                 </button>
             </div>
         </div>

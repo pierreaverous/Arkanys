@@ -1,7 +1,11 @@
-import React, { useEffect } from "react"
-import './_BannerAcceuilStyles.scss'
-import banner from '../../ASSETS/Images/Banner/BannerAceuilArcanys.png'
+import React, { useEffect } from "react";
+import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composants
+import { useTranslation } from 'react-i18next';
+import './_BannerAcceuilStyles.scss';
+import banner from '../../ASSETS/Images/Banner/BannerAceuilArcanys.png';
+
 const BannerAcceuil = () => {
+    const { t } = useTranslation();
     useEffect(() => {
         const elementsToAnimate = document.querySelectorAll(".title, .textBanner, .imageBanner");
 
@@ -28,22 +32,19 @@ const BannerAcceuil = () => {
         };
     }, []);
 
-    return(
+    return (
         <main>
-          <div className='containerAcceuil'>
-              <div className='containerBanner'>
-                  <div className='title-Banner'>
-                      <h1 className='title'>Bienvenue Dans Arkanys</h1>
-                      <p className='textBanner'>Bienvenue dans l'univers fascinant de notre jeu mobile blockchain, où vous pourrez collectionner des héros, des monstres et des équipements, participer à des modes de jeu captivants et profiter d'un marché dynamique. Plongez dans une aventure épique et découvrez comment jouer gratuitement, gagner des jetons et améliorer vos personnages pour dominer vos adversaires.</p>
-                  </div>
-                    <img className='imageBanner' src={banner} alt="image de la bannierre"/>
-              </div>
-
-          </div>
-
+            <div className='containerAcceuil'>
+                <div className='containerBanner'>
+                    <div className='title-Banner'>
+                        <h1 className='title'>{t('BannerAcceuil.title')}</h1>
+                        <p className='textBanner'>{t('BannerAcceuil.description')}</p>
+                    </div>
+                    <img className='imageBanner' src={banner} alt="banner image"/>
+                </div>
+            </div>
         </main>
-    )
+    );
 }
 
-
-export default BannerAcceuil
+export default BannerAcceuil;

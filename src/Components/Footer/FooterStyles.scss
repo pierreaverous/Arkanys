@@ -2,14 +2,21 @@
   background-color: #073242;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   color: white;
 }
-
+.containerMentions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
 .footerLink {
   text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
 }
 .contactButton {
   background-color: #f79007;
@@ -54,3 +61,37 @@
   }
 }
 
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+  }
+
+  .footerLink {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .contactButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+// Media queries pour téléphone
+@media (max-width: 480px) {
+  .containerFooter {
+    padding: 10px;
+  }
+
+  .footerLink {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .contactButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

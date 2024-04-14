@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composants
+import { useTranslation } from 'react-i18next';
 import "./CarousselMonsterMobileStyles.scss";
 import bellier from "../../ASSETS/Images/Monstre/Bellier.png";
 import chevre from "../../ASSETS/Images/Monstre/Chevaucheuse de Chevre.png";
@@ -21,44 +23,37 @@ const cards = [
     {
         title: "BELLIER",
         img: bellier,
-        text:
-            "Le bélier massif est équipé d'une armure lourde et d'une tête en forme de bélier, utilisée pour démolir les tours et les défenses ennemies.",
+        text: "Le bélier massif est équipé d'une armure lourde et d'une tête en forme de bélier, utilisée pour démolir les tours et les défenses ennemies.",
     },
     {
         title: "CHEVAUCHEUSE DE CHEVRE",
         img: chevre,
-        text:
-            "Armée d'une lance puissante, elle attaque aussi bien à distance qu'au corps à corps.",
+        text: "Armée d'une lance puissante, elle attaque aussi bien à distance qu'au corps à corps.",
     },
     {
         title: "COLOSSE",
         img: colosse,
-        text:
-            "Géant de pierre concentré uniquement sur la destruction des tours et des défenses ennemies.",
+        text: "Géant de pierre concentré uniquement sur la destruction des tours et des défenses ennemies.",
     },
     {
         title: "DRAGONNET DE GLACE",
         img: dragounet,
-        text:
-            "Petit dragon volant qui attaque les ennemis au sol et dans les airs en crachant des boules de glace.",
+        text: "Petit dragon volant qui attaque les ennemis au sol et dans les airs en crachant des boules de glace.",
     },
     {
         title: "DROGON",
         img: drogon,
-        text:
-            "Fonce sur les tours et les défenses ennemies avec une vitesse fulgurante. Il est insensible aux attaques des unités terrestres et se concentre exclusivement sur les structures.",
+        text: "Fonce sur les tours et les défenses ennemies avec une vitesse fulgurante. Il est insensible aux attaques des unités terrestres et se concentre exclusivement sur les structures.",
     },
     {
         title: "EKIPIC",
         img: ekipic,
-        text:
-            "Agile et résistant, cet étonnant monstre est capable de renvoyer les dégâts à ses adversaires grâce à un mécanisme de défense unique.",
+        text: "Agile et résistant, cet étonnant monstre est capable de renvoyer les dégâts à ses adversaires grâce à un mécanisme de défense unique.",
     },
     {
         title: "FLORAGIDE",
         img: floragide,
-        text:
-            "Plante humanoïde capable de lancer des attaques à distance et de soigner les alliés proches.",
+        text: "Plante humanoïde capable de lancer des attaques à distance et de soigner les alliés proches.",
     },
     {
         title: "GELATIN",
@@ -68,42 +63,38 @@ const cards = [
     {
         title: "GOBELIN VOLANT",
         img: gobelin,
-        text:
-            "Duo de créatures volantes rapides et agiles qui attaquent les ennemis au sol et dans les airs.",
+        text: "Duo de créatures volantes rapides et agiles qui attaquent les ennemis au sol et dans les airs.",
     },
     {
         title: "GRIBOUILLE",
         img: gribouille,
-        text:
-            "Chat lumineux et rapide, doté d'une capacité de camouflage temporaire.",
+        text: "Chat lumineux et rapide, doté d'une capacité de camouflage temporaire.",
     },
     {
         title: "GUEPI",
         img: guepi,
-        text:
-            "Créature volante redoutable qui attaque les unités ennemies, y compris les autres unités aériennes.",
+        text: "Créature volante redoutable qui attaque les unités ennemies, y compris les autres unités aériennes.",
     },
     {
         title: "HORDE SCINTILOU",
         img: horde,
-        text:
-            "Quatuor de petits oiseaux volant rapide, lançant des mini-éclairs sur ses ennemis.",
+        text: "Quatuor de petits oiseaux volant rapide, lançant des mini-éclairs sur ses ennemis.",
     },
     {
         title: "ROCHELAME",
         img: rochelame,
-        text:
-            "Petit golem de pierre robuste et puissant, doté d'une attaque de zone.",
+        text: "Petit golem de pierre robuste et puissant, doté d'une attaque de zone.",
     },
     {
         title: "SCORBUT",
         img: scorbut,
-        text:
-            "Scorpion enflammé, rapide et agile, infligeant des dégâts de feu sur la durée.",
+        text: "Scorpion enflammé, rapide et agile, infligeant des dégâts de feu sur la durée.",
     },
 ];
 
 const CarousselMonsterMobile = () => {
+    const { t } = useTranslation(); // Initialisation de la fonction de traduction
+
     const [touchPosition, setTouchPosition] = useState(null);
     const [isMoving, setIsMoving] = useState(false);
 
@@ -143,7 +134,7 @@ const CarousselMonsterMobile = () => {
     return (
         <div className="carouselContainerMobile">
             <div className="carrouselTitleMobile">
-                <h2 className='titleMobile'>NOS MONSTRES</h2>
+                <h2 className='titleMobile'>{t('monsters.title')}</h2> {/* Utilisation de la fonction de traduction pour le titre */}
             </div>
             <div className="cardMobileTouch">
                 <div className="cardMobile"
@@ -151,8 +142,8 @@ const CarousselMonsterMobile = () => {
                      onTouchMove={handleTouchMove}>
                     <img className="card-imageMobile" src={cards[currentCard].img} alt={cards[currentCard].title} />
                     <div className="card-contentMobile">
-                        <h2 className="card-titleMobile">{cards[currentCard].title}</h2>
-                        <p className="card-textMobile">{cards[currentCard].text}</p>
+                        <h2 className="card-titleMobile">{t(`monsters.cards.${currentCard}.title`)}</h2> {/* Utilisation de la fonction de traduction pour le titre de la carte */}
+                        <p className="card-textMobile">{t(`monsters.cards.${currentCard}.text`)}</p> {/* Utilisation de la fonction de traduction pour le texte de la carte */}
                     </div>
                 </div>
             </div>

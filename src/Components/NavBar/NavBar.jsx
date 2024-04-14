@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import './NavBarStyles.scss';
 import { HashLink as Link } from 'react-router-hash-link';
+import './NavBarStyles.scss';
 import logoArcanys from "../../ASSETS/Images/Logo/logo arcanys.png";
+import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composants
+
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
     // Obtenez le chemin de l'URL actuelle
@@ -9,6 +12,7 @@ const NavBar = () => {
 
     // Ajout de l'état pour le menu déroulant
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { t } = useTranslation();
 
     return (
         <>
@@ -23,13 +27,13 @@ const NavBar = () => {
                     </div>
 
                     <div className={`buttonLink ${isMenuOpen ? 'open' : ''}`}>
-                        <Link to="/" className={`HeaderLink ${currentPath === '/' ? 'active' : ''}`}>ACCUEIL</Link>
-                        <Link to="/#modeDeJeux" className={`HeaderLink ${currentPath === '/' ? 'active' : ''}`}>MODES DE JEU</Link>
-                        <Link to="/roadmap" className={`HeaderLink ${currentPath === '/roadmap' ? 'active' : ''}`}>ROAD MAP</Link>
-                        <Link to="/lever-de-fond" className={`HeaderLink ${currentPath === '/lever-de-fond' ? 'active' : ''}`}>LEVÉE DE FONDS</Link>
-                        <Link to="/contact" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>CONTACT</Link>
-                        <Link to="/Faq" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>FAQ</Link>
-                        <a href="https://arkanys.gitbook.io/white-paper/" className='HeaderLink'>WHITE PAPER</a>
+                        <Link to="/" className={`HeaderLink ${currentPath === '/' ? 'active' : ''}`}>{t('navBar.home')}</Link>
+                        <Link to="/#modeDeJeux" className={`HeaderLink ${currentPath === '/' ? 'active' : ''}`}>{t('navBar.gameModes')}</Link>
+                        <Link to="/roadmap" className={`HeaderLink ${currentPath === '/roadmap' ? 'active' : ''}`}>{t('navBar.roadmap')}</Link>
+                        <Link to="/lever-de-fond" className={`HeaderLink ${currentPath === '/lever-de-fond' ? 'active' : ''}`}>{t('navBar.fundraising')}</Link>
+                        <Link to="/contact" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>{t('navBar.contact')}</Link>
+                        <Link to="/Faq" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>{t('navBar.faq')}</Link>
+                        <a href="https://arkanys.gitbook.io/white-paper/" className='HeaderLink'>{t('navBar.whitePaper')}</a>
                     </div>
 
                     {/* Bouton du menu déroulant */}
@@ -47,7 +51,7 @@ const NavBar = () => {
                 </div>
             </header>
         </>
-    )
+    );
 }
 
 export default NavBar;

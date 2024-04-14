@@ -1,0 +1,357 @@
+{
+  "BannerAcceuil": {
+    "title": "Bienvenue Dans Arkanys",
+    "description": "Bienvenue dans l'univers fascinant de notre jeu mobile blockchain, où vous pourrez collectionner des héros, des monstres et des équipements, participer à des modes de jeu captivants et profiter d'un marché dynamique. Plongez dans une aventure épique et découvrez comment jouer gratuitement, gagner des jetons et améliorer vos personnages pour dominer vos adversaires."
+  },
+
+  "BannerModeJeu": {
+    "title": "Modes de jeu :",
+    "description": "Notre jeu proposera à terme plusieurs variantes pour satisfaire tous les types de joueurs. Que vous préfériez les combats en arène, les défis en coopération ou les campagnes solo, vous trouverez un mode de jeu qui vous convient. Chaque mode offre des récompenses uniques et des expériences de jeu passionnantes.",
+    "mode1Title": "Arkanys Arena",
+    "mode1Description": "Le mode \"Arkanys Arena\" d'Arkanys offre une expérience de jeu immersive et stratégique pour satisfaire les joueurs à la recherche de défis compétitifs. Ce mode met l'accent sur la personnalisation des decks, la gestion des ressources et la progression à travers différentes arènes, offrant ainsi une expérience de jeu riche et captivante.",
+    "mode1Extended": [
+      "Le gameplay du mode \"Arkanys Arena\" est basé sur des combats en tour par tour entre deux joueurs, chacun disposant de 150 secondes pour jouer au cours d'une partie et de 15 secondes par tour de jeu. Les combats ont lieu dans différentes arènes, chacune offrant des récompenses et des défis croissants.",
+      "Au cours des combats, les joueurs déploient leurs unités et lancent des sorts en utilisant de l'ether, une ressource qui se régénère automatiquement tout au long de la partie. Chaque unité et sort a un coût en ether, obligeant les joueurs à prendre des décisions stratégiques sur la manière de gérer leurs ressources pour déployer efficacement leurs troupes et remporter le combat.",
+      "Si aucun joueur n'a atteint l'un des deux objectifs (éliminer tous les personnages adverses ou détruire les tours) dans les 5 minutes imparties, une prolongation est déclenchée. Durant cette prolongation, chaque joueur reçoit 60 secondes supplémentaires et l'octroi d'ether est augmenté par tour, ce qui intensifie l'action et encourage les joueurs à élaborer des stratégies plus agressives pour remporter la victoire.",
+      "Les victoires rapportent des trophées pour progresser dans les classements et accéder à des récompenses plus importantes. De plus, les victoires permettent aux joueurs de gagner des coffres contenant des cartes de héros, de monstres, d'équipements et de sorts pour améliorer et personnaliser leurs decks."
+    ],
+    "mode2Title": "Le Monde de Tokenia: Les Gardiens d'Arkanys",
+    "mode2Description": "Les Gardiens d'Arkanys (LGA) est le mode de jeu final d'Arkanys. Dans ce mode, les joueurs explorent un vaste monde peuplé de monstres, de quêtes et de défis. Les héros, les monstres et les équipements améliorés dans les autres modes de jeu sont essentiels pour progresser dans LGA, où les joueurs devront affronter des ennemis de plus en plus puissants et résoudre des énigmes complexes pour avancer dans l'histoire.",
+    "mode2Extended": [
+      "LGA est un jeu de rôle et d'exploration où les joueurs contrôlent leur héros et son équipe de monstres dans un monde ouvert et interactif. Les combats dans LGA sont basés sur un système de combat au tour par tour, où les joueurs doivent utiliser la stratégie et la réflexion pour vaincre leurs ennemis.",
+      "Les joueurs devront également résoudre des énigmes, accomplir des quêtes et interagir avec des personnages non-joueurs pour avancer dans l'histoire et débloquer de nouvelles zones à explorer.",
+      "Les récompenses gagnées dans LGA, telles que des cartes de héros, des monstres, des équipements et des ressources, peuvent être utilisées pour améliorer et personnaliser les decks dans tous les modes de jeu, renforçant ainsi l'interconnexion entre les modes et incitant les joueurs à découvrir et profiter de toutes les facettes d'Arkanys.",
+      "Exploration et quêtes: Les joueurs exploreront un vaste monde ouvert rempli de divers environnements, points d'intérêt, et monstres à affronter. Ils pourront accomplir des quêtes pour progresser dans l'histoire et débloquer de nouvelles zones.",
+      "PvM - Combat contre les monstres: Les joueurs pourront former des groupes pour affronter des monstres dans des combats tactiques au tour par tour. Chaque monstre possédera des caractéristiques et des compétences uniques, obligeant les joueurs à élaborer des stratégies pour les vaincre. Les combats PvM offriront des récompenses sous forme d'expérience, d'objets et de ressources.",
+      "PvP - Combat entre joueurs: Les joueurs pourront également s'affronter dans des combats PvP au tour par tour. Ces combats pourront être organisés dans des arènes dédiées, permettant aux joueurs de montrer leurs compétences et de se mesurer à d'autres joueurs pour gagner des récompenses et améliorer leur classement.",
+      "Personnalisation et progression: Les joueurs pourront personnaliser et améliorer leurs héros en acquérant de nouveaux équipements, compétences, et familiers. Ils gagneront de l'expérience en combattant des monstres et d'autres joueurs, ce qui leur permettra de monter en niveau et de débloquer de nouvelles capacités.",
+      "Coopération et interaction sociale: Les joueurs pourront rejoindre des guildes et coopérer avec d'autres joueurs pour relever des défis PvM et PvP plus difficiles. La communication et la coordination avec les coéquipiers seront essentielles pour réussir dans les combats les plus difficiles.",
+      "Récompenses et économie du jeu: Les joueurs gagneront des récompenses en accomplissant des quêtes, en combattant des monstres et en participant à des combats PvP. Ils pourront échanger ces récompenses sur le marché pour obtenir des objets rares et améliorer leurs héros."
+    ],
+    "common": {
+      "see_more": "Voir plus",
+      "see_less": "Voir moins"
+    }
+  },
+  "items": {
+    "heroes": [
+      {
+        "title": "Brise Lame",
+        "text": "Ce guerrier audacieux et intrépide se spécialise dans les attaques puissantes et les dégâts de zone."
+      },
+      {
+        "title": "Celeste",
+        "text": "Un mage défensif qui invoque des barrières pour protéger ses alliés et contrôler le champ de bataille."
+      },
+      {
+        "title": "Ramedo",
+        "text": "Un puissant sorcier qui manipule le temps pour ralentir les ennemis, accélérer les alliés et infliger des dégâts à distance."
+      },
+      {
+        "title": "Ombrage",
+        "text": "Un assassin discret et mortel qui se déplace furtivement pour infliger de lourds dégâts aux ennemis imprudents."
+      },
+      {
+        "title": "Nicedem",
+        "text": "Un soigneur agile qui utilise les pouvoirs des vents pour soigner ses alliés et attaquer ses ennemis à distance."
+      },
+      {
+        "title": "Gardien de la fôret",
+        "text": "Le Gardien de la Forêt est un héros mystique qui contrôle la nature pour protéger ses alliés et affaiblir ses ennemis."
+      }
+    ],
+    "tower": [
+      {
+        "title": "Aspirine",
+        "text": "Tour de défense qui soigne les alliés proches lorsqu'elle n'est pas en train d'attaquer."
+      },
+      {
+        "title": "Canon",
+        "text": "Tour de défense classique qui tire des projectiles sur les ennemis terrestres."
+      },
+      {
+        "title": "Glacier",
+        "text": "Tour de défense qui tire des projectiles glacés, ralentissant les ennemis touchés."
+      },
+      {
+        "title": "Poisonier",
+        "text": "Tour de défense qui tire des fioles empoisonnés, infligeant des dégâts sur la durée aux ennemis touchés."
+      },
+      {
+        "title": "Tourelle",
+        "text": "Tour de défense classique qui tire des projectiles sur les ennemis terrestres et aériens."
+      },
+      {
+        "title": "Ampoule",
+        "text": "Tour de défense électrique qui inflige des dégâts en chaîne aux ennemis proches."
+      }
+    ],
+    "skill": [
+      {
+        "title": "Eclat d'épines",
+        "text": "Crée un tourbillon d'épines sur le champ de bataille, infligeant des dégâts aux ennemis qui le traversent."
+      },
+      {
+        "title": "Fort Levant",
+        "text": "Érige un mur de glace sur le champ de bataille, bloquant les attaques ennemies et ralentissant les unités qui le traversent."
+      },
+      {
+        "title": "Soins",
+        "text": "Invoque une vague d'énergie purificatrice qui soigne les alliés dans la zone d'effet."
+      },
+      {
+        "title": "Ombre",
+        "text": "Rend les troupes ciblées invisibles pendant un court laps de temps, évitant ainsi les attaques ennemies."
+      },
+      {
+        "title": "Zap",
+        "text": "Électrocute un ennemi, créant une chaîne d'électrocution aux troupes les plus proches."
+      }
+    ]
+  },
+  "monsters": {
+    "title": "Nos Monstres",
+    "cards": [
+      {
+        "title": "Bellier",
+        "text": "Ce bélier massif est équipé d'une armure lourde et d'une tête en forme de bélier, utilisée pour démolir les tours et les défenses ennemies."
+      },
+      {
+        "title": "Chevaucheuse de Chèvre",
+        "text": "Armée d'une lance puissante, elle attaque aussi bien à distance qu'au corps à corps."
+      },
+      {
+        "title": "Colosse",
+        "text": "Géant de pierre concentré uniquement sur la destruction des tours et des défenses ennemies."
+      },
+      {
+        "title": "Dragounet de Glace",
+        "text": "Petit dragon volant qui attaque les ennemis au sol et dans les airs en crachant des boules de glace."
+      },
+      {
+        "title": "Drogon",
+        "text": "Fonce sur les tours et les défenses ennemies avec une vitesse fulgurante. Il est insensible aux attaques des unités terrestres et se concentre exclusivement sur les structures."
+      },
+      {
+        "title": "Ekipic",
+        "text": "Agile et résistant, cet étonnant monstre est capable de renvoyer les dégâts à ses adversaires grâce à un mécanisme de défense unique."
+      },
+      {
+        "title": "Floragide",
+        "text": "Humanoïde végétal capable de lancer des attaques à distance et de soigner les alliés proches."
+      },
+      {
+        "title": "Gelatin",
+        "text": "Créature gélatineuse et lente qui absorbe une partie des dégâts reçus."
+      },
+      {
+        "title": "Gobelin Volant",
+        "text": "Duo de créatures volantes rapides et agiles qui attaquent les ennemis au sol et dans les airs."
+      },
+      {
+        "title": "Gribouille",
+        "text": "Chat lumineux et rapide, doté d'une capacité de camouflage temporaire."
+      },
+      {
+        "title": "Guepi",
+        "text": "Créature volante redoutable qui attaque les unités ennemies, y compris les autres unités aériennes."
+      },
+      {
+        "title": "Horde Scintilou",
+        "text": "Quatuor de petits oiseaux volants rapides, lançant des mini-éclairs sur ses ennemis."
+      },
+      {
+        "title": "Rochelame",
+        "text": "Petit golem de pierre robuste et puissant, doté d'une attaque de zone."
+      },
+      {
+        "title": "Scorbut",
+        "text": "Scorpion enflammé, rapide et agile, infligeant des dégâts de feu sur la durée."
+      }
+    ]
+  },
+  "leverdefond": {
+    "title": "1 ARK$ = XXXX$",
+    "initialGoal": "Objectif Initiale Sale = 390 000$",
+    "timeLeft": "Temps restant :",
+    "untilPriceIncrease": "Jusqu'à l'augmentation du prix à XXX$",
+    "launchPrice": "Prix au lancement : 1 ARK$ = XXX USDT",
+    "buyNowInUSDT": "ACHETER MAINTENANT EN USDT",
+    "buyNowInFiat": "ACHETER MAINTENANT EN FIAT"
+  },
+  "footer": {
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "contactUs": "Nous contacter",
+    "email": "Email: Hello@arkanys.io",
+    "contactPage": "Page Contact"
+  },
+  "contactForm": {
+    "title": "Nous contacter",
+    "name": "Nom:",
+    "email": "Email:",
+    "phone": "Téléphone:",
+    "message": "Message:",
+    "sendButton": "Envoyer",
+    "successMessage": "E-mail envoyé avec succès!"
+  },
+  "navBar": {
+    "home": "ACCUEIL",
+    "gameModes": "MODES DE JEU",
+    "roadmap": "ROAD MAP",
+    "fundraising": "LEVÉE DE FONDS",
+    "contact": "CONTACT",
+    "faq": "FAQ",
+    "whitePaper": "WHITE PAPER"
+  },
+  "roadmap": {
+    "title": "FEUILLE DE ROUTE",
+    "quarters": [
+      {
+        "title": "Trimestre 1",
+        "items": [
+          "Livret blanc v1",
+          "Conceptualisation des designs des héros, sbires, sorts et équipements",
+          "Évaluation des besoins financiers",
+          "Évaluation des besoins humains",
+          "Élaboration du plan marketing",
+          "Recherche d'investisseurs pour la vente privée du token ARK$",
+          "Élaboration des plans pour la marketplace interconnectée",
+          "Élaboration des plans pour la mise en place d'une DAO"
+        ]
+      },
+      {
+        "title": "Trimestre 2",
+        "items": [
+          "Vente initiale de tokens / SAFT",
+          "Recrutement de l'équipe",
+          "Publication du livre blanc v2",
+          "Vente de démarrage",
+          "Création des designs",
+          "Développement des cartes et gameplay du mode 'Arkanys Arena'",
+          "Vente privée",
+          "Élargissement de l'équipe"
+        ]
+      },
+      {
+        "title": "Trimestre 3",
+        "items": [
+          "Développement des NFTs",
+          "Lancement de l'alpha sur testnet pour le mode 'Arkanys Arena'",
+          "INO",
+          "Développement de la marketplace",
+          "Mega Giveaway"
+        ]
+      },
+      {
+        "title": "Trimestre 4",
+        "items": [
+          "Préparation et lancement de la prévente et des 3 tours d'ICO",
+          "Finalisation du mode 'Arkanys Arena'",
+          "TGE du token ARK$"
+        ]
+      },
+      {
+        "title": "Trimestre 5",
+        "items": [
+          "Développement du mode 'LGA'",
+          "Mise en place de la semi-DAO et intégration des membres actifs de la communauté",
+          "Organisation du premier Giga Giveaway"
+        ]
+      },
+      {
+        "title": "Trimestre 6",
+        "items": [
+          "Alpha du mode 'LGA'",
+          "Développement des 'lands' pour le métavers",
+          "Organisation du deuxième événement réel pour la communauté"
+        ]
+      },
+      {
+        "title": "Trimestre 7",
+        "items": [
+          "Bêta ouverte du mode 'LGA'",
+          "Vente des 'lands' pour le métavers",
+          "Organisation du deuxième Mega Giveaway 'coup marketing'"
+        ]
+      },
+      {
+        "title": "Trimestre 8",
+        "items": [
+          "Consolidation et amélioration de tous les modes de jeu",
+          "Organisation du troisième événement réel pour la communauté",
+          "Célébration de l'anniversaire du projet avec un Mega Giveaway spécial",
+          "Sortie officielle du mode 'LGA'"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "questions": [
+      {
+        "question": "Quelle est la vision à long terme d'Arkanys ?",
+        "answer": "Arkanys vise à démocratiser le gaming grâce à la blockchain. Le but n'est pas de créer un projet sur quelques mois, mais de bâtir un véritable écosystème où les utilisateurs pourront exploiter pleinement le potentiel du gaming sur la blockchain."
+      },
+      {
+        "question": "Comment puis-je investir dans Arkanys ?",
+        "answer": "Le planning des différentes levées de fonds est disponible dans l'onglet correspondant. Nous sommes actuellement en phase de Seed Sale en devise FIAT. Si vous souhaitez investir dès maintenant, vous pouvez remplir l'onglet contact en sélectionnant « Je souhaite investir », un membre de l'équipe prendra ensuite contact avec vous."
+      },
+      {
+        "question": "Quels sont les partenariats stratégiques d'Arkanys ?",
+        "answer": "Arkanys va principalement s'entourer d'acteurs majeurs dans les technologies de la blockchain mais aussi du gaming. Les partenaires pourront être des investisseurs, gamers, conseillers ou encore influenceurs ciblés."
+      },
+      {
+        "question": "Quels sont les avantages de posséder des tokens ARK$ ?",
+        "answer": "Le token servira principalement de monnaie d'échange, tout comme les monnaies virtuelles disponibles sur la majorité des jeux vidéo. Le token ARK$ sera essentiel tout au long du projet. Le but à terme étant de rattacher d'autres projets à ce token, il deviendra alors comme un token universel dans le monde du jeu vidéo sur la blockchain."
+      },
+      {
+        "question": "Quels sont les avantages uniques d'Arkanys par rapport à d'autres jeux blockchain ?",
+        "answer": "Arkanys se distingue par son univers riche et immersif, offrant une expérience de jeu free-to-play et skill-to-earn. Il intègre des éléments de tours de défense, de collecte de héros et de monstres, et permet une véritable propriété des actifs via des NFTs. La DAO Arkanys permet une participation communautaire active dans la gouvernance du jeu. De plus, l'engagement envers la responsabilité sociale et environnementale ajoute une dimension éthique unique au projet."
+      },
+      {
+        "question": "Comment Arkanys assure-t-il la sécurité des données et des transactions ?",
+        "answer": "Arkanys prend la sécurité des données et des transactions très au sérieux. Voici comment la sécurité est assurée : Technologie Blockchain : En utilisant la technologie blockchain, toutes les transactions dans Arkanys sont enregistrées dans un registre décentralisé. Cela garantit que les transactions sont transparentes, immuables et vérifiables par tous les membres de la communauté. Cryptographie : Les informations sensibles, telles que les clés privées et les données de compte, sont cryptées en utilisant des algorithmes de cryptographie modernes. Cela garantit que vos informations restent privées et sécurisées. Authentification à Deux Facteurs (2FA) : Arkanys peut offrir une authentification à deux facteurs pour les comptes utilisateurs, ajoutant une couche supplémentaire de sécurité lors de la connexion. Conformité Réglementaire : Arkanys adhère aux réglementations et aux normes de l'industrie en matière de sécurité et de confidentialité, assurant que les meilleures pratiques sont suivies."
+      },
+      {
+        "question": "Quelle est la politique de Arkanys en matière de responsabilité sociale et environnementale ?",
+        "answer": "Arkanys s'engage dans une démarche de responsabilité sociale et environnementale en soutenant des initiatives caritatives et en minimisant son empreinte carbone. Une partie des revenus du jeu sera allouée à des causes sociales et environnementales. De plus, Arkanys explore des solutions pour rendre les opérations blockchain plus éco-énergétiques, alignant ainsi le jeu avec des valeurs durables."
+      },
+      {
+        "question": "Comment puis-je rejoindre la communauté d'Arkanys et participer activement ? ",
+        "answer": "Vous pouvez nous rejoindre sur nos différents canaux : \nTwitter \nLinkedIn  \nDiscord"
+      },
+      {
+        "question": "Comment puis-je suivre les mises à jour et les annonces d'Arkanys ?",
+        "answer": "Toutes les dernières annonces sont disponibles sur notre Discord ou sur le compte Twitter."
+      },
+      {
+        "question": "Quelle est la feuille de route de développement futur d'Arkanys ?",
+        "answer": "Nous sommes actuellement à la version 1.0 de la feuille de route. Celle-ci est à titre indicatif afin que les utilisateurs puissent connaître les ambitions du projet sur 2 années."
+      },
+      {
+        "question": "Comment puis-je obtenir un support technique ou client pour Arkanys ?",
+        "answer": " Afin d'obtenir un support technique ou client, vous pouvez nous envoyer un mail à support@arkanys.io, nous vous répondrons sous 48h."
+      },
+      {
+        "question": "Y a-t-il des opportunités de carrière chez Arkanys ?",
+        "answer": "Les offres d'emploi sont visibles sur notre page LinkedIn."
+      },
+      {
+        "question": "Quelle est la politique de confidentialité d'Arkanys ?",
+        "answer": "Vous pouvez visualiser notre politique de confidentialité sur la page « Politique de confidentialité »."
+      },
+      {
+        "question": "Qui sont les fondateurs ?",
+        "answer": " Les fondateurs sont de jeunes Français passionnés de jeux vidéo et des nouvelles technologies."
+      },
+      {
+        "question": "Y a-t-il des restrictions géographiques pour jouer à Arkanys ou investir dans le token ARK$ ?",
+        "answer": "Non. Si vous avez un PC et une connexion internet, vous pourrez jouer ou investir dans le monde entier."
+      }
+    ]
+  }
+
+
+}
+

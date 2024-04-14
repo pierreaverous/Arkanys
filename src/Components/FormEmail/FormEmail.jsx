@@ -1,54 +1,61 @@
-import './FormEmailStyles.scss'
-import emailjs from 'emailjs-com';
-import logo from '../../ASSETS/Images/Logo/logo arcanys.png'
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import logo from '../../ASSETS/Images/Logo/logo arcanys.png';
+import './FormEmailStyles.scss';
+import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composants
+
+import { useTranslation } from 'react-i18next';
+
 function ContactForm() {
+    const { t } = useTranslation();
     const [alertMessage, setAlertMessage] = useState('');
+
     function handleSubmit(event) {
         event.preventDefault();
 
         emailjs.sendForm('service_1mk55gb', 'template_3klapii', event.target, 'doGzWGUw06xrtZkbB')
             .then((result) => {
-                alert('E-mail envoyé avec succès!');
+                setAlertMessage(t('contactForm.successMessage'));
                 console.log(result.text);
-                window.location.reload();
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000); // Reload after 2 seconds
             }, (error) => {
                 console.log(error.text);
             });
     }
+
     return (
         <div className='containerEmail'>
-            <h2 className='titleEmail'> Nous contacter</h2>
+            <h2 className='titleEmail'>{t('contactForm.title')}</h2>
             <div className='containerEmailService'>
                 <div className='containerImage'>
-                    <img className='imageCarte' src={logo} alt='cartes'/>
-                    <p className='textEmailFooter'>Téléphone: +33.6.13.80.05.04</p>
-                    <p className='textEmailFooter'>Addresse: 2027 chemin de exemple</p>
+                    <img className='imageCarte' src={logo} alt='cartes' />
                 </div>
 
                 <form onSubmit={handleSubmit}>
                     <label>
-                        <p>Nom:</p>
+                        <p>{t('contactForm.name')}</p>
                         <input type="text" name="user_name" />
                     </label>
                     <label>
-                        <p>Email:</p>
+                        <p>{t('contactForm.email')}</p>
                         <input type="email" name="user_email" />
                     </label>
                     <label>
-                        <p>Telephone:</p>
+                        <p>{t('contactForm.phone')}</p>
                         <input type="tel" name="user_tel" />
                     </label>
                     <label>
-                        <p>Message:</p>
-                        <textarea  className='labelMessage' name="message" />
+                        <p>{t('contactForm.message')}</p>
+                        <textarea className='labelMessage' name="message" />
                     </label>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit">{t('contactForm.sendButton')}</button>
                 </form>
                 {alertMessage && <p>{alertMessage}</p>}
             </div>
-
         </div>
     );
 }
-export default ContactForm
+
+export default ContactForm;

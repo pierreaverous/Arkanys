@@ -5,9 +5,32 @@
   align-items: center;
   top: 0px;
   height: 100px;
+  position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 99999999999;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+body {
+  top: 0 !important;
+  position: relative !important;
+}
+
+iframe.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
+  //display: none !important;
+}
+a.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+  display: none !important;
+}
+.goog-te-gadget{
+  font-size: 0px !important;
+}
+.goog-te-gadget .goog-te-combo {
+  margin: 4px 0;
+  background-color: #02e3dc;
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
 }
 
 .container-logo-title {

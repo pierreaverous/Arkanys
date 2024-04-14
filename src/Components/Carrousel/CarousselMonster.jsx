@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'swiper/swiper-bundle.css';
 import Swiper from 'swiper';
+import '../../i18n'; // Assurez-vous que ce fichier est importé avant vos composants
+import { useTranslation } from 'react-i18next';
 import './CarousselMonsterStyle.scss';
 import bellier from "../../ASSETS/Images/Monstre/Bellier.png";
 import chevre from "../../ASSETS/Images/Monstre/Chevaucheuse de Chevre.png";
@@ -19,78 +21,52 @@ import scorbut from "../../ASSETS/Images/Monstre/SCORBUT.png";
 
 const cards = [
     {
-        title: 'BELLIER',
         img:bellier ,
-        text: 'bélier massif est équipé d\'une armure lourde et d\'une tête en forme de bélier, utilisée pour démolir les tours et les défenses ennemies.',
     },
     {
-        title: 'CHEVAUCHEUSE DE CHEVRE',
         img: chevre,
-        text: 'Armée d\'une lance puissante, elle attaque aussi bien à distance qu\'au corps à corps.',
     },
     {
-        title: 'COLOSSE',
         img: colosse,
-        text: 'Géant de pierre concentrée uniquement sur la destruction des tours et des défenses ennemies.',
     },
     {
-        title: 'DRAGONNET DE GLACE',
         img: dragounet,
-        text: 'Petit dragon volant qui attaque les ennemis au sol et dans les airs en crachant des boules de glace.',
     },
     {
-        title: 'DROGON',
         img: drogon,
-        text: 'Fonce sur les tours et les défenses ennemies avec une vitesse fulgurante. Il est insensible aux attaques des unités terrestres et se concentre exclusivement sur les structures.',
     },
     {
-        title: 'EKIPIC',
         img: ekipic,
-        text: 'Agile et résistant, cet étonnant monstre est capable de renvoyer les dégâts à ses adversaires grâce à un mécanisme de défense unique.',
     },
     {
-        title: 'FLORAGIDE',
         img:floragide,
-        text: 'Plante humanoïde capable de lancer des attaques à distance et de soigner les alliés proches.',
     },
     {
-        title: 'GELATIN',
         img: gelatin,
-        text: 'Créature gélatineuse et lente qui absorbe une partie des dégâts reçus.',
     },
     {
-        title: 'GOBELIN VOLANT',
         img: gobelin,
-        text: 'Duo de créatures volantes rapides et agiles qui attaquent les ennemis au sol et dans les airs.',
     },
     {
-        title: 'GRIBOUILLE',
         img: gribouille,
-        text: 'Chat lumineux et rapide, doté d\'une capacité de camouflage temporaire..',
     },
     {
-        title: 'GUEPI',
         img: guepi,
-        text: 'Créature volante redoutable qui attaque les unités ennemies, y compris les autres unités aériennes.',
     },
     {
-        title: 'HORDE SCINTILOU',
         img: horde,
-        text: 'Quatuor de petits oiseaux volant rapide, lançant des mini-éclairs sur ses ennemis.',
     },
     {
-        title: 'ROCHELAME',
         img: rochelame,
-        text: 'Petit golem de pierre robuste et puissant, doté d\'une attaque de zone.',
     },
     {
-        title: 'SCORBUT',
         img: scorbut,
-        text: 'Scorpion enflammé, rapide et agile, infligeant des dégâts de feu sur la durée.',
     },
 ];
 
-const CarousselMonster = () => {
+const CarousselMonster = ({ type }) => {
+    const { t } = useTranslation();
+
     const swiperRef = useRef(null);
     const [selectedItemIndex, setSelectedItemIndex] = useState(0);
 
@@ -151,7 +127,7 @@ const CarousselMonster = () => {
     return (
         <div className='carouselContainer'>
             <div className='carrouselTitle'>
-                <h2>NOS MONSTRES</h2>
+                <h2>{t('monsters.title')}</h2> {/* Utilisation de la fonction de traduction pour le titre */}
             </div>
             <div className="swiper-container">
                 <div className="swiper-wrapper">
@@ -160,8 +136,8 @@ const CarousselMonster = () => {
                             <div className="card">
                                 <img className="card-image" src={card.img} alt={card.title} />
                                 <div className="card-content">
-                                    <h2 className="card-title">{card.title}</h2>
-                                    <p className="card-text">{card.text}</p>
+                                    <h2 className="card-title">{t(`monsters.cards.${index}.title`)}</h2> {/* Utilisation de la fonction de traduction pour le titre de la carte */}
+                                    <p className="card-text">{t(`monsters.cards.${index}.text`)}</p> {/* Utilisation de la fonction de traduction pour le texte de la carte */}
                                 </div>
                             </div>
                         </div>

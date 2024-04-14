@@ -1,0 +1,33 @@
+// Pages/MentionLegale/MentionLegale.scss
+
+.legal-notice-container {
+  background-image: linear-gradient(to bottom, #073242 75%, #02e3dc 100%); // Utilisation du gradient de votre SCSS existant
+  padding: 130px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f79007; // Utilisation de la couleur orange de votre SCSS existant pour le texte
+
+  h2, h3 {
+    margin-bottom: 20px;
+  }
+
+  address {
+    font-style: normal; // Pour supprimer l'italique par défaut de la balise address
+    margin-bottom: 20px;
+  }
+
+  p, a {
+    margin-bottom: 15px;
+    line-height: 1.5; // Espacement des lignes pour une meilleure lisibilité
+  }
+
+  a {
+    color: #f79007; // Utilisation de la couleur orange pour les liens
+    text-decoration: none; // Suppression du soulignement par défaut des liens
+
+    &:hover {
+      text-decoration: underline; // Soulignement au survol pour indiquer qu'il s'agit d'un lien cliquable
+    }
+  }
+}
