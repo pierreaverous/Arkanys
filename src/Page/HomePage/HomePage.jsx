@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import '../../i18n'; // Assurez-vous que ce fichier est importé avant vos composants
+
+import '../../i18n'; // Assurez-vous que ce fichier est importé avant vos composants
 import './_HomePageStyle.scss';
 import NavBar from "../../Components/NavBar/NavBar";
 import BannerAcceuil from "../../Components/BannerAcceuil/BannerAcceuil";
@@ -11,12 +15,10 @@ import Caroussel from "../../Components/Carrousel/Caroussel";
 import { heroes, skill, tower } from '../../Components/Carrousel/CarrousselData';
 import CarousselMonster from "../../Components/Carrousel/CarousselMonster";
 import CarousselMonsterMobile from "../../Components/Carrousel/CarousselMonsterMobile";
-// import CaroussellePouvoir from "../../Components/Carrousel/CarrouselSkill";
-
-
 
 const HomePage = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const checkIsMobile = () => {
@@ -31,58 +33,52 @@ const HomePage = () => {
             window.removeEventListener('resize', checkIsMobile);
         };
     }, []);
-  return(
-      <>
-        <NavBar />
-          <div className='containerHome'>
-                <BannerAcceuil/>
 
-              <div className='containerPage'>
-                  <div className='containerpageleverFond'>
-                      <div className='containerRight'>
-                          <div className='containRight'>
-                              <h1 className='titleContainerRight'>ARKANYS - Un free-to-play, skill to earn made in France</h1>
-                              <p className='TextLeverdefond'>Arkanys est un univers de jeux blockchain combinant plusieurs modes inspirés des meilleurs jeux vidéos. Il démocratise la blockchain, encourage la communauté à prendre des décisions et renforce l'engagement grâce à son token ARK$ et à sa DAO</p>
-                              <ContainerLeverDefond percentage={10}/>
-                          </div>
-                      </div>
-                      <div className='containerLeft'>
-                          <img className='logoPageleverFond' src={logo} alt='logo'/>
-                          <p className='TextLeverdefond'>⚠️Méfiez-vous des sites Web frauduleux et non autorisés, des médias sociaux ou des comptes de messagerie prétendant représenter Arkanys. Arkanys n'assume aucune responsabilité pour les fausses déclarations et les dommages résultant de la tromperie délibérée perpétrée par des tiers frauduleux. Veuillez faire preuve de prudence à tout moment.
-                              N'interagissez qu'avec des comptes Arkanys vérifiés.
-                          </p>
-                          <img  className='logoPageleverFond' src={arkanys} alt='logo'/>
-                      </div>
-                  </div>
-              </div>
-              <BannerModeJeu/>
-              <div className='carrouselleContainer'>
-                  <h1 className='carrouselTitlePage'> Nos Héros</h1>
-                  <Caroussel items={heroes} type="heroes" />
-              </div>
-              {isMobile ? (
-                  <CarousselMonsterMobile />
-              ) : (
-                  <CarousselMonster />
-              )}
-              <div className='test'>
-                  <div className='carrouselleContainer'>
-                      <h1 className='carrouselTitlePage'> Nos Tours de défense</h1>
-                      <Caroussel items={tower} type="tower" />
-                  </div>
-                  <div className='carrouselleContainer'>
-                      <h1 className='carrouselTitlePage'> Nos Skill</h1>
-                      <Caroussel items={skill} type="skill" />
-                  </div>
-              </div>
-          </div>
-
-
-
-          <Footer/>
-      </>
-
-  )
+    return(
+        <>
+            <NavBar />
+            <div className='containerHome'>
+                <BannerAcceuil />
+                <div className='containerPage'>
+                    <div className='containerpageleverFond'>
+                        <div className='containerRight'>
+                            <div className='containRight'>
+                                <h1 className='titleContainerRight'>{t('homepage.title')}</h1>
+                                <p className='TextLeverdefond'>{t('homepage.introText')}</p>
+                                <ContainerLeverDefond percentage={10}/>
+                            </div>
+                        </div>
+                        <div className='containerLeft'>
+                            <img className='logoPageleverFond' src={logo} alt='logo'/>
+                            <p className='TextLeverdefond'>{t('homepage.warningText')}</p>
+                            <img className='logoPageleverFond' src={arkanys} alt='logo'/>
+                        </div>
+                    </div>
+                </div>
+                <BannerModeJeu/>
+                <div className='carrouselleContainer'>
+                    <h1 className='carrouselTitlePage'>{t('homepage.heroesTitle')}</h1>
+                    <Caroussel items={heroes} type="heroes" />
+                </div>
+                {isMobile ? (
+                    <CarousselMonsterMobile />
+                ) : (
+                    <CarousselMonster />
+                )}
+                <div className='test'>
+                    <div className='carrouselleContainer'>
+                        <h1 className='carrouselTitlePage'>{t('homepage.towersTitle')}</h1>
+                        <Caroussel items={tower} type="tower" />
+                    </div>
+                    <div className='carrouselleContainer'>
+                        <h1 className='carrouselTitlePage'>{t('homepage.skillsTitle')}</h1>
+                        <Caroussel items={skill} type="skill" />
+                    </div>
+                </div>
+            </div>
+            <Footer/>
+        </>
+    )
 }
 
 export default HomePage;

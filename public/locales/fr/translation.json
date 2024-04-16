@@ -3,7 +3,6 @@
     "title": "Bienvenue Dans Arkanys",
     "description": "Bienvenue dans l'univers fascinant de notre jeu mobile blockchain, où vous pourrez collectionner des héros, des monstres et des équipements, participer à des modes de jeu captivants et profiter d'un marché dynamique. Plongez dans une aventure épique et découvrez comment jouer gratuitement, gagner des jetons et améliorer vos personnages pour dominer vos adversaires."
   },
-
   "BannerModeJeu": {
     "title": "Modes de jeu :",
     "description": "Notre jeu proposera à terme plusieurs variantes pour satisfaire tous les types de joueurs. Que vous préfériez les combats en arène, les défis en coopération ou les campagnes solo, vous trouverez un mode de jeu qui vous convient. Chaque mode offre des récompenses uniques et des expériences de jeu passionnantes.",
@@ -350,8 +349,60 @@
         "answer": "Non. Si vous avez un PC et une connexion internet, vous pourrez jouer ou investir dans le monde entier."
       }
     ]
+  },
+  "homepage": {
+    "title": "ARKANYS - Un free-to-play, skill to earn made in France",
+    "introText": "Arkanys est un univers de jeux blockchain combinant plusieurs modes inspirés des meilleurs jeux vidéos. Il démocratise la blockchain, encourage la communauté à prendre des décisions et renforce l'engagement grâce à son token ARK$ et à sa DAO",
+    "warningText": "⚠️Méfiez-vous des sites Web frauduleux et non autorisés, des médias sociaux ou des comptes de messagerie prétendant représenter Arkanys. Arkanys n'assume aucune responsabilité pour les fausses déclarations et les dommages résultant de la tromperie délibérée perpétrée par des tiers frauduleux. Veuillez faire preuve de prudence à tout moment. N'interagissez qu'avec des comptes Arkanys vérifiés.",
+    "heroesTitle": "Nos Héros",
+    "towersTitle": "Nos Tours de défense",
+    "skillsTitle": "Nos Skill"
+  },
+  "fundraisingPage": {
+    "title": "ARKANYS - Un free-to-play, skill to earn made in France",
+    "introText": "Arkanys est un univers de jeux blockchain combinant plusieurs modes inspirés des meilleurs jeux vidéos. Il démocratise la blockchain, encourage la communauté à prendre des décisions et renforce l'engagement grâce à son token ARK$ et à sa DAO",
+    "warningText": "⚠️Méfiez-vous des sites Web frauduleux et non autorisés, des médias sociaux ou des comptes de messagerie prétendant représenter Arkanys. Arkanys n'assume aucune responsabilité pour les fausses déclarations et les dommages résultant de la tromperie délibérée perpétrée par des tiers frauduleux. Veuillez faire preuve de prudence à tout moment. N'interagissez qu'avec des comptes Arkanys vérifiés.",
+    "seedTitle": "ARKANYS - SEED",
+    "inoTitle": "ARKANYS - INO",
+    "privateSaleTitle": "ARKANYS - PRIVATE SALE + ICO"
+  },
+  "legalNotice": {
+    "pageTitle": "Mentions légales",
+    "introduction": "Le site Arkanys.io est exploité par EJ INVEST :",
+    "headOfficeTitle": "Siège social :",
+    "headOfficeAddress": "EJ INVEST\nRte de Gréasque\n13120 GARDANNE\nFRANCE",
+    "companyInfo": "L'entreprise est une société par action simplifiée (SAS) créée conformément à la législation française, avec un capital social de 15 000 €.",
+    "registrationInfo": "Société enregistrée au RCS d'AIX EN PROVENCE sous le numéro d'immatriculation 909 300 584 00010",
+    "vatNumber": "Numéro de TVA intracommunautaire : FR5809300584",
+    "email": "Adresse email : hello@arkanys.io",
+    "phoneNumber": "Numéro de téléphone : XX XX XX XX XX",
+    "hostingProvider": "Hébergeur : Ionos SARL"
+  },
+  "privacyPolicy": {
+    "pageTitle": "Politique de Confidentialité",
+    "introductionTitle": "Introduction",
+    "introductionText": "Nous attachons une grande importance à la protection de la vie privée de nos utilisateurs. Cette politique décrit comment nous collectons, utilisons, conservons et divulguons vos informations personnelles.",
+    "collectionTitle": "Collecte d'informations",
+    "collectionText": "Nous collectons des informations lorsque vous vous inscrivez sur notre site, passez une commande ou participez à d'autres activités sur notre site. Les informations collectées peuvent inclure votre nom, adresse e-mail, numéro de téléphone, etc.",
+    "useTitle": "Utilisation des informations",
+    "useText": [
+      "Personnaliser votre expérience et répondre à vos besoins individuels.",
+      "Améliorer notre site Web.",
+      "Améliorer le service client et vos besoins de prise en charge.",
+      "Vous contacter par e-mail."
+    ],
+    "blockchainTitle": "La technologie blockchain et vos données",
+    "blockchainText": "Détails sur la façon dont nous utilisons la technologie blockchain pour sécuriser et optimiser vos transactions et interactions sur notre site.",
+    "onlinePrivacyTitle": "Confidentialité du commerce en ligne",
+    "onlinePrivacyText": "Nous sommes les seuls propriétaires des informations recueillies sur ce site. Vos informations personnelles ne seront pas vendues, échangées, transférées ou données à une autre entreprise pour n'importe quelle raison, sans votre consentement.",
+    "thirdPartyDisclosureTitle": "Divulgation à des tiers",
+    "thirdPartyDisclosureText": "Nous ne vendons, n'échangeons et ne transférons pas vos informations personnelles identifiables à des tiers. Cela ne comprend pas les partenaires de confiance qui nous aident à exploiter notre site Web ou à mener nos affaires, tant que ces parties conviennent de garder ces informations confidentielles.",
+    "infoProtectionTitle": "Protection des informations",
+    "infoProtectionText": "Nous mettons en œuvre une variété de mesures de sécurité pour préserver la sécurité de vos informations personnelles.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "Nos cookies améliorent l'accès à notre site et identifient les visiteurs réguliers. De plus, nos cookies améliorent l'expérience de l'utilisateur en suivant et en ciblant ses intérêts.",
+    "consentTitle": "Consentement",
+    "consentText": "En utilisant notre site, vous consentez à notre politique de confidentialité."
   }
-
-
 }
 

@@ -3,7 +3,6 @@
     "title": "Welcome to Arkanys",
     "description": "Welcome to the fascinating universe of our blockchain mobile game, where you can collect heroes, monsters, and gear, engage in captivating game modes, and enjoy a dynamic market. Dive into an epic adventure and discover how to play for free, earn tokens, and enhance your characters to dominate your opponents."
   },
-
   "BannerModeJeu": {
     "title": "Game Modes:",
     "description": "Our game will eventually offer several variants to satisfy all types of players. Whether you prefer arena combat, cooperative challenges, or solo campaigns, you will find a game mode that suits you. Each mode offers unique rewards and thrilling gameplay experiences.",
@@ -31,84 +30,83 @@
     "common": {
       "see_more": "See More",
       "see_less": "See Less"
-    },
-    "items": {
-      "heroes": [
-        {
-          "title": "Blade Breaker",
-          "text": "This bold and fearless warrior specializes in powerful attacks and area damage."
-        },
-        {
-          "title": "Celeste",
-          "text": "A defensive mage who summons barriers to protect allies and control the battlefield."
-        },
-        {
-          "title": "Ramedo",
-          "text": "A powerful sorcerer who manipulates time to slow enemies, speed up allies, and deal damage from afar."
-        },
-        {
-          "title": "Shadow",
-          "text": "A stealthy and deadly assassin who moves unseen to deliver heavy damage to unsuspecting enemies."
-        },
-        {
-          "title": "Nicedem",
-          "text": "An agile healer who uses the powers of the winds to heal allies and attack enemies from a distance."
-        },
-        {
-          "title": "Forest Guardian",
-          "text": "The Forest Guardian is a mystical hero who controls nature to protect his allies and weaken his enemies."
-        }
-      ],
-      "towers": [
-        {
-          "title": "Aspirin",
-          "text": "A defense tower that heals nearby allies when not attacking."
-        },
-        {
-          "title": "Cannon",
-          "text": "A classic defense tower that fires projectiles at ground enemies."
-        },
-        {
-          "title": "Glacier",
-          "text": "A defense tower that shoots icy projectiles, slowing down the enemies hit."
-        },
-        {
-          "title": "Poisonier",
-          "text": "A defense tower that shoots poisoned vials, inflicting damage over time on touched enemies."
-        },
-        {
-          "title": "Turret",
-          "text": "A classic defense tower that shoots projectiles at ground and air enemies."
-        },
-        {
-          "title": "Bulb",
-          "text": "An electric defense tower that deals chain damage to nearby enemies."
-        }
-      ],
-      "skills": [
-        {
-          "title": "Thorn Burst",
-          "text": "Creates a whirlwind of thorns on the battlefield, dealing damage to enemies that pass through it."
-        },
-        {
-          "title": "Fort Levant",
-          "text": "Erects a wall of ice on the battlefield, blocking enemy attacks and slowing units that pass through it."
-        },
-        {
-          "title": "Healing",
-          "text": "Summons a wave of purifying energy that heals allies within the effect area."
-        },
-        {
-          "title": "Shadow",
-          "text": "Renders targeted troops invisible for a short time, thus avoiding enemy attacks."
-        },
-        {
-          "title": "Zap",
-          "text": "Electrocutes an enemy, creating a chain of electrocution to the nearest troops."
-        }
-      ]
     }
-
+  },
+  "items": {
+    "heroes": [
+      {
+        "title": "Blade Breaker",
+        "text": "This bold and fearless warrior specializes in powerful attacks and area damage."
+      },
+      {
+        "title": "Celeste",
+        "text": "A defensive mage who summons barriers to protect allies and control the battlefield."
+      },
+      {
+        "title": "Ramedo",
+        "text": "A powerful sorcerer who manipulates time to slow enemies, speed up allies, and deal damage from afar."
+      },
+      {
+        "title": "Shadow",
+        "text": "A stealthy and deadly assassin who moves unseen to deliver heavy damage to unsuspecting enemies."
+      },
+      {
+        "title": "Nicedem",
+        "text": "An agile healer who uses the powers of the winds to heal allies and attack enemies from a distance."
+      },
+      {
+        "title": "Forest Guardian",
+        "text": "The Forest Guardian is a mystical hero who controls nature to protect his allies and weaken his enemies."
+      }
+    ],
+    "tower": [
+      {
+        "title": "Aspirin",
+        "text": "A defense tower that heals nearby allies when not attacking."
+      },
+      {
+        "title": "Cannon",
+        "text": "A classic defense tower that fires projectiles at ground enemies."
+      },
+      {
+        "title": "Glacier",
+        "text": "A defense tower that shoots icy projectiles, slowing down the enemies hit."
+      },
+      {
+        "title": "Poisonier",
+        "text": "A defense tower that shoots poisoned vials, inflicting damage over time on touched enemies."
+      },
+      {
+        "title": "Turret",
+        "text": "A classic defense tower that shoots projectiles at ground and air enemies."
+      },
+      {
+        "title": "Bulb",
+        "text": "An electric defense tower that deals chain damage to nearby enemies."
+      }
+    ],
+    "skill": [
+      {
+        "title": "Thorn Burst",
+        "text": "Creates a whirlwind of thorns on the battlefield, dealing damage to enemies that pass through it."
+      },
+      {
+        "title": "Fort Levant",
+        "text": "Erects a wall of ice on the battlefield, blocking enemy attacks and slowing units that pass through it."
+      },
+      {
+        "title": "Healing",
+        "text": "Summons a wave of purifying energy that heals allies within the effect area."
+      },
+      {
+        "title": "Shadow",
+        "text": "Renders targeted troops invisible for a short time, thus avoiding enemy attacks."
+      },
+      {
+        "title": "Zap",
+        "text": "Electrocutes an enemy, creating a chain of electrocution to the nearest troops."
+      }
+    ]
   },
   "monsters": {
     "title": "Our Monsters",
@@ -197,10 +195,10 @@
     "successMessage": "Email sent successfully!"
   },
   "navBar": {
-    "home": "ACCUEIL",
-    "gameModes": "MODES DE JEU",
-    "roadmap": "ROAD MAP",
-    "fundraising": "LEVÉE DE FONDS",
+    "home": "HOME",
+    "gameModes": "GAME MODES",
+    "roadmap": "ROADMAP",
+    "fundraising": "FUNDRAISING",
     "contact": "CONTACT",
     "faq": "FAQ",
     "whitePaper": "WHITE PAPER"
@@ -351,7 +349,59 @@
         "answer": "No. If you have a PC and an internet connection, you can play or invest anywhere in the world."
       }
     ]
+  },
+  "homepage": {
+    "title": "ARKANYS - A free-to-play, skill to earn game made in France",
+    "introText": "Arkanys is a universe of blockchain games combining several modes inspired by the best video games. It democratizes blockchain, encourages the community to make decisions, and enhances engagement through its ARK$ token and DAO.",
+    "warningText": "⚠️Beware of fraudulent and unauthorized websites, social media, or email accounts claiming to represent Arkanys. Arkanys assumes no responsibility for false statements and damages resulting from deliberate deception perpetrated by fraudulent third parties. Please exercise caution at all times. Only interact with verified Arkanys accounts.",
+    "heroesTitle": "Our Heroes",
+    "towersTitle": "Our Defense Towers",
+    "skillsTitle": "Our Skills"
+  },
+  "fundraisingPage": {
+    "title": "ARKANYS - A free-to-play, skill to earn game made in France",
+    "introText": "Arkanys is a universe of blockchain games combining several modes inspired by the best video games. It democratizes blockchain, encourages the community to make decisions, and enhances engagement through its ARK$ token and DAO.",
+    "warningText": "⚠️Beware of fraudulent and unauthorized websites, social media, or email accounts claiming to represent Arkanys. Arkanys assumes no responsibility for false statements and damages resulting from deliberate deception perpetrated by fraudulent third parties. Please exercise caution at all times. Only interact with verified Arkanys accounts.",
+    "seedTitle": "ARKANYS - SEED",
+    "inoTitle": "ARKANYS - INO",
+    "privateSaleTitle": "ARKANYS - PRIVATE SALE + ICO"
+  },
+  "legalNotice": {
+    "pageTitle": "Legal Notice",
+    "introduction": "The Arkanys.io website is operated by EJ INVEST:",
+    "headOfficeTitle": "Head Office:",
+    "headOfficeAddress": "EJ INVEST\nRte de Gréasque\n13120 GARDANNE\nFRANCE",
+    "companyInfo": "The company is a simplified joint stock company (SAS) created in accordance with French law, with a share capital of €15,000.",
+    "registrationInfo": "Company registered in the RCS of AIX EN PROVENCE under the registration number 909 300 584 00010",
+    "vatNumber": "Intra-community VAT number: FR5809300584",
+    "email": "Email address: hello@arkanys.io",
+    "phoneNumber": "Phone number: XX XX XX XX XX",
+    "hostingProvider": "Hosting Provider: Ionos SARL"
+  },
+  "privacyPolicy": {
+    "pageTitle": "Privacy Policy",
+    "introductionTitle": "Introduction",
+    "introductionText": "We place great importance on the protection of our users' privacy. This policy describes how we collect, use, store, and disclose your personal information.",
+    "collectionTitle": "Information Collection",
+    "collectionText": "We collect information when you register on our site, place an order, or participate in other activities on our site. The information collected may include your name, email address, phone number, etc.",
+    "useTitle": "Use of Information",
+    "useText": [
+      "Customize your experience and meet your individual needs.",
+      "Improve our website.",
+      "Enhance customer service and your support needs.",
+      "Contact you via email."
+    ],
+    "blockchainTitle": "Blockchain Technology and Your Data",
+    "blockchainText": "Details on how we use blockchain technology to secure and optimize your transactions and interactions on our site.",
+    "onlinePrivacyTitle": "Online Privacy",
+    "onlinePrivacyText": "We are the sole owners of the information collected on this site. Your personal information will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent.",
+    "thirdPartyDisclosureTitle": "Third Party Disclosure",
+    "thirdPartyDisclosureText": "We do not sell, trade, or transfer your personally identifiable information to third parties. This does not include trusted partners who assist us in operating our website or conducting our business, as long as these parties agree to keep this information confidential.",
+    "infoProtectionTitle": "Information Protection",
+    "infoProtectionText": "We implement a variety of security measures to maintain the safety of your personal information.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "Our cookies enhance access to our site and identify regular visitors. Furthermore, our cookies enhance user experience by tracking and targeting their interests.",
+    "consentTitle": "Consent",
+    "consentText": "By using our site, you consent to our privacy policy."
   }
-
-
 }

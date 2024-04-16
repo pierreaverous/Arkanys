@@ -7,12 +7,13 @@ import '../../i18n'; // Assure-toi que ce fichier est importé avant tes composa
 import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
-    // Obtenez le chemin de l'URL actuelle
     const currentPath = window.location.pathname;
-
-    // Ajout de l'état pour le menu déroulant
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
 
     return (
         <>
@@ -34,9 +35,10 @@ const NavBar = () => {
                         <Link to="/contact" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>{t('navBar.contact')}</Link>
                         <Link to="/Faq" className={`HeaderLink ${currentPath === '/contact' ? 'active' : ''}`}>{t('navBar.faq')}</Link>
                         <a href="https://arkanys.gitbook.io/white-paper/" className='HeaderLink'>{t('navBar.whitePaper')}</a>
+                        <button onClick={() => changeLanguage('fr')} className="lang-btn">FR</button>
+                        <button onClick={() => changeLanguage('en')} className="lang-btn">EN</button>
                     </div>
 
-                    {/* Bouton du menu déroulant */}
                     <div className={`mobile-menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         {isMenuOpen ? (
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
